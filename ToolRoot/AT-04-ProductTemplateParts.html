@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Higher Ed - Learning Management Systems (LMS) administration tool</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">HE LMS Admin Tool</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Institutions</a></li>
+            <li><a href="#">LMS Contracts</a></li>
+            <li><a href="./AT-03-ContentAccessProfiles.html">Content Access Profiles</a></li>
+            <li class="active"><a href="#">Product Template Parts</a></li>
+            <li><a href="./AT-05-ProductCriteria.html">Product Criteria</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h4>Harvard Business Publishing for Educators : Higher Ed Tech Group</h3>
+        <p class="lead">Learning Management Systems (LMS) administration tool.</p>
+	</div>
+<hr />
+<ol>
+<li>GRANULAR: &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; Select individual <b style="font-size: large;">Product Criteria</b> to create reusable <b style="font-size: large;">Product Template Parts</b> (assemblies).</li>
+<li>COMBINATION: &nbsp; &nbsp; &nbsp; Combine Template Parts into reusable <b style="font-size: large;">Content Access Profiles</b>.</li>
+<li>USE:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Apply Profiles to individual <b style="font-size: large;">LMS Contracts</b>, for certain <b style="font-size: large;">Institutions</b>.</li>
+</ol>
+
+<hr /> <br />
+
+
+
+	<form method="POST" action="http://cbmp.harvard.edu/lmsadmintool">
+	<div class="container"> <!-- WR_ container -->
+		<h3 align="center">Product Template Parts</h4> <br />
+		<div align="center">Standard Product Template Base Parts (2) | Standard Product Template Add-On Parts (7)  <br /> Custom Product Template Base Parts (4) | Custom Product Template Add-On Parts (t.b.d.)</div>
+		
+		<table class="table table-bordered table-hover table-striped table-condensed">
+			<tbody>
+				<h5>Standard Product Template Base Parts : </h5> (count: 2)
+				<th>
+					<td>Product Template Part ID</td>
+					<td>Product Template Part Name</td>
+					<td>Description</td>
+				</th>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>PTP_STD_PRINT_01</td>
+					<td>Standard</td>
+					<td>Standard Product Template Part (Print)</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>PTP_STD_EPROD_02</td>
+					<td>EProduct</td>
+					<td>Standard Product Template Part (EProduct)</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		
+		<table class="table table-bordered table-hover table-striped table-condensed">
+			<tbody>
+				<h5>Standard Product Template Add-On Parts :</h5> (count: 7)
+				<th>
+					<td>Product Template Part ID</td>
+					<td>Product Template Part Name</td>
+					<td>Description</td>
+				</th>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>PTP_AO_01</td>
+					<td>Samples</td>
+					<td>All Product Types of Standard (print), pre-processed with watermark</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>PTP_AO_02</td>
+					<td>TN Clean</td>
+					<td>Teaching Notes, Plans, similar (ACL 3 material). No watermark</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>PTP_AO_03</td>
+					<td>TN Sample</td>
+					<td>Teaching Notes, Plans, similar (ACL 3 material). Pre-processed with watermark</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>PTP_AO_04</td>
+					<td>EProduct Faculty Only</td>
+					<td>EProduct version of Teaching Notes, similar (ACL 3 material)</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>PTP_AO_05</td>
+					<td>Language: Spanish & Portuguese</td>
+					<td>All available Spanish & Portuguese versions for set of Standard product types</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>PTP_AO_06</td>
+					<td>Language: Japanese</td>
+					<td>All available Japanese versions for set of Standard product types</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>PTP_AO_07</td>
+					<td>Language: French</td>
+					<td>All available French versions for set of Standard product types</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+
+
+		<table class="table table-bordered table-hover table-striped table-condensed">
+			<tbody>
+				<h5>Custom Product Template Base Parts : </h5> (count: 4)
+				<th>
+					<td>Product Template Part ID</td>
+					<td>Product Template Part Name</td>
+					<td>Description</td>
+				</th>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>PTP_CUST_01</td>
+					<td>Custom: Aspen</td>
+					<td>Aspen customized subset of product types. (See Content Access Profile for information on metadata-only restriction)</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>PTP_CUST_02</td>
+					<td>Custom: CNCCU</td>
+					<td>CNCCU customized subset of product types</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>PTP_CUST_03</td>
+					<td>Custom: ECCH</td>
+					<td>ECCH customized subset of product types. N.B. Copyright Holder exclusion: Darden. Note: "Standard + TN + Sample." Also: Same content selection as in Product Template Part used for Ivey (PTP_CUST_04)</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>PTP_CUST_04</td>
+					<td>Custom: Ivey</td>
+					<td>Ivey customized subset of product types. N.B. Copyright Holder exclusion: Darden. Note: "Standard + TN + Sample." Also: Same content selection as in Product Template Part used for ECCH (PTP_CUST_03)</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+
+
+		<table class="table table-bordered table-hover table-striped table-condensed">
+			<tbody>
+				<h5>Custom Product Template Add-On Parts : </h5> (count: t.b.d.) <i>(below are invented ideas...)</i>
+				<th>
+					<td>Product Template Part ID</td>
+					<td>Product Template Part Name</td>
+					<td>Description</td>
+				</th>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>PTP_CUST_AO_01</td>
+					<td>Custom Add-On: XYZ University</td>
+					<td><i>(Invented)</i> : Different Copyright Holder Exclusion(s)</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>PTP_CUST_AO_02</td>
+					<td>Custom Add-On: ABC University</td>
+					<td><i>(Invented)</i> : Different Language (e.g. SPA only)</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>PTP_CUST_AO_03</td>
+					<td>Custom Add-On: ABC123 University</td>
+					<td><i>(Invented)</i> : Different selection of ACL 3 product types (e.g. TPs only)</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+	<div>
+	<button type="submit" class="btn btn-default">Create Content Access Profile</button>
+	</form>
+
+<br /><br />
+<div style="font-size: x-small;">Last modified: 2013-07-30</div>
+
+  </body>
+</html>

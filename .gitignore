@@ -1,0 +1,7 @@
+# Git Pocket Guide, p. 42-44
+# July 30, 2013
+# /Users/william.reilly/dev/HBSP/LMSAdminTool/.gitignore
+
+ToolRoot/bower_components/
+
+# That oughta do it

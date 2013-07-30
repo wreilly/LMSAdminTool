@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Higher Ed - Learning Management Systems (LMS) administration tool</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">HE LMS Admin Tool</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Institutions</a></li>
+            <li><a href="#">LMS Contracts</a></li>
+            <li class="active"><a href="#">Content Access Profiles</a></li>
+            <li><a href="./AT-04-ProductTemplateParts.html">Product Template Parts</a></li>
+            <li><a href="./AT-05-ProductCriteria.html">Product Criteria</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h4>Harvard Business Publishing for Educators : Higher Ed Tech Group</h3>
+        <p class="lead">Learning Management Systems (LMS) administration tool.</p>
+	</div>
+<hr />
+<ol>
+<li>GRANULAR: &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; Select individual <b style="font-size: large;">Product Criteria</b> to create reusable <b style="font-size: large;">Product Template Parts</b> (assemblies).</li>
+<li>COMBINATION: &nbsp; &nbsp; &nbsp; Combine Template Parts into reusable <b style="font-size: large;">Content Access Profiles</b>.</li>
+<li>USE:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Apply Profiles to individual <b style="font-size: large;">LMS Contracts</b>, for certain <b style="font-size: large;">Institutions</b>.</li>
+</ol>
+
+<hr /> <br />
+
+
+
+	<form method="POST" action="http://cbmp.harvard.edu/lmsadmintool">
+	<div class="container"> <!-- WR_ container -->
+		<h3 align="center">Content Access Profiles</h4> <br />
+		<div align="center">Standard Content Access Profiles (8) | Custom Content Access Profiles (4) </div>
+		
+		<table class="table table-bordered table-hover table-striped table-condensed">
+			<tbody>
+				<h5>Standard Content Access Profiles : </h5> (count: 8)
+				<th>
+					<td>Content Access Profile ID</td>
+					<td>Content Access Profile Name</td>
+					<td>Description, Parts</td>
+				</th>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CAP_STD_01</td>
+					<td>Standard, Print</td>
+					<td>Standard Content Access Profile (Print). <br />Parts: <li>PTP_STD_PRINT_01</li></td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CAP_STD_02</td>
+					<td>Standard, EProduct</td>
+					<td>Standard Content Access Profile (Print). <br />Parts: <li>PTP_STD_EPROD_02</li></td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CAP_STD_03</td>
+					<td>Standard, with Samples</td>
+					<td>Standard Content Access Profile (Print), with Samples. <br />Parts: <li>PTP_STD_PRINT_01</li>
+						<li>PTP_AO_01</li></td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CAP_STD_04</td>
+					<td>Standard, with TNs Clean</td>
+					<td>Standard Content Access Profile (Print), with TNs without watermark. <br />Parts: <li>PTP_STD_PRINT_01</li>
+						<li>PTP_AO_02</li></td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CAP_STD_05</td>
+					<td>Standard, with TNs Samples</td>
+					<td>Standard Content Access Profile (Print), with TNs with watermark. <br />Parts: <li>PTP_STD_PRINT_01</li>
+						<li>PTP_AO_03</li></td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CAP_STD_06</td>
+					<td>Standard EProduct, with EProduct TNs</td>
+					<td>Standard Content Access Profile (EProduct), with EProduct Faculty Only (TN, ACL 3)<br />Parts: <li>PTP_STD_EPROD_02</li>
+						<li>PTP_AO_04</li></td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CAP_STD_07</td>
+					<td>Standard, with Japanese</td>
+					<td>Standard Content Access Profile (Print), with Japanese<br />Parts: <li>PTP_STD_PRINT_01</li>
+						<li>PTP_AO_06</li></td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CAP_STD_08</td>
+					<td>Standard, with TNs (Clean), with Japanese</td>
+					<td>Standard Content Access Profile (Print), with TNs (Clean), with Japanese<br />Parts: <li>PTP_STD_PRINT_01</li>
+						<li>PTP_AO_02</li>
+						<li>PTP_AO_06</li></td>
+				</tr>
+			</tbody>
+		</table>
+		
+		
+		<table class="table table-bordered table-hover table-striped table-condensed">
+			<tbody>
+				<h5>Custom Content Access Profiles :</h5> (count: 4)
+				<th>
+					<td>Content Access Profile ID</td>
+					<td>Content Access Profile Name</td>
+					<td>Description, Parts</td>
+				</th>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CAP_CUST_01</td>
+					<td>Aspen</td>
+					<td>Custom: Aspen. <br />Parts: <li>PTP_CUST_01</li></td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CAP_CUST_02</td>
+					<td>CNCCU</td>
+					<td>Custom: CNCCU. <br />Parts: <li>PTP_CUST_02</li></td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CAP_CUST_03</td>
+					<td>CNCCU</td>
+					<td>Custom: CNCCU. <br />Parts: <li>PTP_CUST_03</li></td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CAP_CUST_04</td>
+					<td>CNCCU</td>
+					<td>Custom: CNCCU. <br />Parts: <li>PTP_CUST_04</li></td>
+				</tr>
+			</tbody>
+		</table>
+
+	<div>
+	<button type="submit" class="btn btn-default">Select One Content Access Profile ...</button> You will be taken to the LMS Contract page to apply this Profile ...
+	</form>
+
+<br /><br />
+<div style="font-size: x-small;">Last modified: 2013-07-30</div>
+
+  </body>
+</html>
