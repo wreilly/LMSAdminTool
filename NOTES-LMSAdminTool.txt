@@ -1,0 +1,854 @@
+July 30, 2013
+
+BOOTSTRAP for the Higher Ed LMS / LTI Admin Tool
+U/I Prototype Mockup
+
+
+DIGRESSION: BOWER Package Manager
+For Bootstrap install
+
+administrators-MacBook-Air-2:chapter02 william.reilly$ pwd
+/Users/william.reilly/dev/Node/JumpStart-Node/wr_dev/chapter02
+administrators-MacBook-Air-2:chapter02 william.reilly$ npm install -g bower
+npm http GET https://registry.npmjs.org/bower
+npm http 200 https://registry.npmjs.org/bower
+npm http GET https://registry.npmjs.org/bower/-/bower-1.0.3.tgz
+npm http 200 https://registry.npmjs.org/bower/-/bower-1.0.3.tgz
+npm ERR! Error: EACCES, mkdir '/usr/local/lib/node_modules/bower'
+npm ERR!  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/bower']
+npm ERR!   errno: 3,
+npm ERR!   code: 'EACCES',
+npm ERR!   path: '/usr/local/lib/node_modules/bower',
+npm ERR!   fstream_type: 'Directory',
+npm ERR!   fstream_path: '/usr/local/lib/node_modules/bower',
+npm ERR!   fstream_class: 'DirWriter',
+npm ERR!   fstream_stack: 
+npm ERR!    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+npm ERR!      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53',
+npm ERR!      'Object.oncomplete (fs.js:107:15)' ] }
+npm ERR! 
+npm ERR! Please try running this command again as root/Administrator.
+
+npm ERR! System Darwin 11.4.2
+npm ERR! command "node" "/usr/local/bin/npm" "install" "-g" "bower"
+npm ERR! cwd /Users/william.reilly/dev/Node/JumpStart-Node/wr_dev/chapter02
+npm ERR! node -v v0.10.13
+npm ERR! npm -v 1.3.2
+npm ERR! path /usr/local/lib/node_modules/bower
+npm ERR! fstream_path /usr/local/lib/node_modules/bower
+npm ERR! fstream_type Directory
+npm ERR! fstream_class DirWriter
+npm ERR! code EACCES
+npm ERR! errno 3
+npm ERR! stack Error: EACCES, mkdir '/usr/local/lib/node_modules/bower'
+npm ERR! fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+npm ERR! fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53
+npm ERR! fstream_stack Object.oncomplete (fs.js:107:15)
+npm ERR! 
+npm ERR! Additional logging details can be found in:
+npm ERR!     /Users/william.reilly/dev/Node/JumpStart-Node/wr_dev/chapter02/npm-debug.log
+npm ERR! not ok code 0
+administrators-MacBook-Air-2:chapter02 william.reilly$ sudo npm install -g bower 
+Password:
+npm http GET https://registry.npmjs.org/bower
+npm http 304 https://registry.npmjs.org/bower
+npm http GET https://registry.npmjs.org/archy/0.0.2
+npm http GET https://registry.npmjs.org/abbrev
+npm http GET https://registry.npmjs.org/bower-config
+npm http GET https://registry.npmjs.org/bower-endpoint-parser
+npm http GET https://registry.npmjs.org/bower-json
+npm http GET https://registry.npmjs.org/bower-logger
+npm http GET https://registry.npmjs.org/bower-registry-client
+npm http GET https://registry.npmjs.org/chmodr
+npm http GET https://registry.npmjs.org/colors
+npm http GET https://registry.npmjs.org/fstream
+npm http GET https://registry.npmjs.org/fstream-ignore
+npm http GET https://registry.npmjs.org/glob
+npm http GET https://registry.npmjs.org/graceful-fs
+npm http GET https://registry.npmjs.org/handlebars
+npm http GET https://registry.npmjs.org/inquirer
+npm http GET https://registry.npmjs.org/junk
+npm http GET https://registry.npmjs.org/mout
+npm http GET https://registry.npmjs.org/nopt
+npm http GET https://registry.npmjs.org/mkdirp
+npm http GET https://registry.npmjs.org/lru-cache
+npm http GET https://registry.npmjs.org/open
+npm http GET https://registry.npmjs.org/promptly
+npm http GET https://registry.npmjs.org/q
+npm http GET https://registry.npmjs.org/request-progress
+npm http GET https://registry.npmjs.org/rimraf
+npm http GET https://registry.npmjs.org/semver
+npm http GET https://registry.npmjs.org/request-replay
+npm http GET https://registry.npmjs.org/stringify-object
+npm http GET https://registry.npmjs.org/sudo-block
+npm http GET https://registry.npmjs.org/tar
+npm http GET https://registry.npmjs.org/tmp
+npm http GET https://registry.npmjs.org/unzip
+npm http GET https://registry.npmjs.org/update-notifier
+npm http GET https://registry.npmjs.org/which
+npm http GET https://registry.npmjs.org/request
+npm http 200 https://registry.npmjs.org/archy/0.0.2
+npm http GET https://registry.npmjs.org/archy/-/archy-0.0.2.tgz
+npm http 200 https://registry.npmjs.org/bower-endpoint-parser
+npm http 200 https://registry.npmjs.org/bower-config
+npm http GET https://registry.npmjs.org/bower-endpoint-parser/-/bower-endpoint-parser-0.2.0.tgz
+npm http GET https://registry.npmjs.org/bower-config/-/bower-config-0.2.0-rc.1.tgz
+npm http 200 https://registry.npmjs.org/abbrev
+npm http GET https://registry.npmjs.org/abbrev/-/abbrev-1.0.4.tgz
+npm http 200 https://registry.npmjs.org/bower-json
+npm http GET https://registry.npmjs.org/bower-json/-/bower-json-0.2.0.tgz
+npm http 200 https://registry.npmjs.org/bower-logger
+npm http GET https://registry.npmjs.org/bower-logger/-/bower-logger-0.1.0.tgz
+npm http 200 https://registry.npmjs.org/chmodr
+npm http GET https://registry.npmjs.org/chmodr/-/chmodr-0.1.0.tgz
+npm http 200 https://registry.npmjs.org/colors
+npm http GET https://registry.npmjs.org/colors/-/colors-0.6.1.tgz
+npm http 200 https://registry.npmjs.org/bower-registry-client
+npm http GET https://registry.npmjs.org/bower-registry-client/-/bower-registry-client-0.1.1.tgz
+npm http 200 https://registry.npmjs.org/fstream-ignore
+npm http GET https://registry.npmjs.org/fstream-ignore/-/fstream-ignore-0.0.7.tgz
+npm http 200 https://registry.npmjs.org/fstream
+npm http GET https://registry.npmjs.org/fstream/-/fstream-0.1.24.tgz
+npm http 200 https://registry.npmjs.org/archy/-/archy-0.0.2.tgz
+npm http 200 https://registry.npmjs.org/graceful-fs
+npm http GET https://registry.npmjs.org/graceful-fs/-/graceful-fs-2.0.0.tgz
+npm http 200 https://registry.npmjs.org/junk
+npm http 200 https://registry.npmjs.org/bower-config/-/bower-config-0.2.0-rc.1.tgz
+npm http 200 https://registry.npmjs.org/bower-json/-/bower-json-0.2.0.tgz
+npm http 200 https://registry.npmjs.org/abbrev/-/abbrev-1.0.4.tgz
+npm http 200 https://registry.npmjs.org/bower-endpoint-parser/-/bower-endpoint-parser-0.2.0.tgz
+npm http GET https://registry.npmjs.org/junk/-/junk-0.2.1.tgz
+npm http 200 https://registry.npmjs.org/handlebars
+npm http 200 https://registry.npmjs.org/bower-logger/-/bower-logger-0.1.0.tgz
+npm http GET https://registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz
+npm http 200 https://registry.npmjs.org/chmodr/-/chmodr-0.1.0.tgz
+npm http 200 https://registry.npmjs.org/colors/-/colors-0.6.1.tgz
+npm http 200 https://registry.npmjs.org/mout
+npm http 200 https://registry.npmjs.org/bower-registry-client/-/bower-registry-client-0.1.1.tgz
+npm http 200 https://registry.npmjs.org/fstream-ignore/-/fstream-ignore-0.0.7.tgz
+npm http 200 https://registry.npmjs.org/fstream/-/fstream-0.1.24.tgz
+npm http 200 https://registry.npmjs.org/mkdirp
+npm http GET https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz
+npm http GET https://registry.npmjs.org/mout/-/mout-0.6.0.tgz
+npm http 200 https://registry.npmjs.org/graceful-fs/-/graceful-fs-2.0.0.tgz
+npm http 200 https://registry.npmjs.org/junk/-/junk-0.2.1.tgz
+npm http 200 https://registry.npmjs.org/nopt
+npm http 200 https://registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz
+npm http 200 https://registry.npmjs.org/open
+npm http 200 https://registry.npmjs.org/inquirer
+npm http GET https://registry.npmjs.org/nopt/-/nopt-2.1.2.tgz
+npm http GET https://registry.npmjs.org/open/-/open-0.0.4.tgz
+npm http GET https://registry.npmjs.org/inquirer/-/inquirer-0.2.3.tgz
+npm http 200 https://registry.npmjs.org/promptly
+npm http 200 https://registry.npmjs.org/lru-cache
+npm http 200 https://registry.npmjs.org/glob
+npm http 200 https://registry.npmjs.org/request-progress
+npm http GET https://registry.npmjs.org/promptly/-/promptly-0.2.0.tgz
+npm http GET https://registry.npmjs.org/lru-cache/-/lru-cache-2.3.0.tgz
+npm http 200 https://registry.npmjs.org/inquirer/-/inquirer-0.2.3.tgz
+npm http GET https://registry.npmjs.org/glob/-/glob-3.2.6.tgz
+npm http GET https://registry.npmjs.org/request-progress/-/request-progress-0.2.1.tgz
+npm http 200 https://registry.npmjs.org/rimraf
+npm http 200 https://registry.npmjs.org/request-replay
+npm http 200 https://registry.npmjs.org/stringify-object
+npm http 200 https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz
+npm http 200 https://registry.npmjs.org/mout/-/mout-0.6.0.tgz
+npm http GET https://registry.npmjs.org/rimraf/-/rimraf-2.2.2.tgz
+npm http 200 https://registry.npmjs.org/promptly/-/promptly-0.2.0.tgz
+npm http GET https://registry.npmjs.org/request-replay/-/request-replay-0.1.4.tgz
+npm http GET https://registry.npmjs.org/stringify-object/-/stringify-object-0.1.4.tgz
+npm http 200 https://registry.npmjs.org/semver
+npm http 200 https://registry.npmjs.org/sudo-block
+npm http 200 https://registry.npmjs.org/nopt/-/nopt-2.1.2.tgz
+npm http 200 https://registry.npmjs.org/lru-cache/-/lru-cache-2.3.0.tgz
+npm http GET https://registry.npmjs.org/semver/-/semver-2.0.11.tgz
+npm http GET https://registry.npmjs.org/sudo-block/-/sudo-block-0.2.0.tgz
+npm http 200 https://registry.npmjs.org/tar
+npm http 200 https://registry.npmjs.org/open/-/open-0.0.4.tgz
+npm http 200 https://registry.npmjs.org/glob/-/glob-3.2.6.tgz
+npm http 200 https://registry.npmjs.org/tmp
+npm http 200 https://registry.npmjs.org/request-progress/-/request-progress-0.2.1.tgz
+npm http 200 https://registry.npmjs.org/rimraf/-/rimraf-2.2.2.tgz
+npm http 304 https://registry.npmjs.org/request
+npm http 200 https://registry.npmjs.org/update-notifier
+npm http 200 https://registry.npmjs.org/which
+npm http 200 https://registry.npmjs.org/request-replay/-/request-replay-0.1.4.tgz
+npm http 200 https://registry.npmjs.org/stringify-object/-/stringify-object-0.1.4.tgz
+npm http 200 https://registry.npmjs.org/unzip
+npm http GET https://registry.npmjs.org/tar/-/tar-0.1.18.tgz
+npm http GET https://registry.npmjs.org/tmp/-/tmp-0.0.20.tgz
+npm http 200 https://registry.npmjs.org/semver/-/semver-2.0.11.tgz
+npm http 200 https://registry.npmjs.org/sudo-block/-/sudo-block-0.2.0.tgz
+npm http GET https://registry.npmjs.org/update-notifier/-/update-notifier-0.1.4.tgz
+npm http GET https://registry.npmjs.org/which/-/which-1.0.5.tgz
+npm http GET https://registry.npmjs.org/unzip/-/unzip-0.1.8.tgz
+npm http 200 https://registry.npmjs.org/tmp/-/tmp-0.0.20.tgz
+npm http 200 https://registry.npmjs.org/which/-/which-1.0.5.tgz
+npm http 200 https://registry.npmjs.org/unzip/-/unzip-0.1.8.tgz
+npm http 200 https://registry.npmjs.org/tar/-/tar-0.1.18.tgz
+npm http 200 https://registry.npmjs.org/q
+npm http GET https://registry.npmjs.org/q/-/q-0.9.6.tgz
+npm http 200 https://registry.npmjs.org/update-notifier/-/update-notifier-0.1.4.tgz
+npm http 200 https://registry.npmjs.org/q/-/q-0.9.6.tgz
+npm http GET https://registry.npmjs.org/configstore
+npm http GET https://registry.npmjs.org/request
+npm http GET https://registry.npmjs.org/throttleit
+npm http GET https://registry.npmjs.org/retry
+npm http GET https://registry.npmjs.org/deep-extend
+npm http GET https://registry.npmjs.org/read
+npm http 304 https://registry.npmjs.org/request
+npm http GET https://registry.npmjs.org/optimist
+npm http GET https://registry.npmjs.org/osenv/0.0.3
+npm http 200 https://registry.npmjs.org/configstore
+npm http GET https://registry.npmjs.org/request/-/request-2.22.0.tgz
+npm http GET https://registry.npmjs.org/configstore/-/configstore-0.1.2.tgz
+npm http GET https://registry.npmjs.org/minimatch
+npm http GET https://registry.npmjs.org/inherits
+npm http 200 https://registry.npmjs.org/read
+npm http 200 https://registry.npmjs.org/throttleit
+npm http GET https://registry.npmjs.org/read/-/read-1.0.5.tgz
+npm http 200 https://registry.npmjs.org/deep-extend
+npm http 200 https://registry.npmjs.org/retry
+npm http GET https://registry.npmjs.org/throttleit/-/throttleit-0.0.2.tgz
+npm http 200 https://registry.npmjs.org/osenv/0.0.3
+npm http GET https://registry.npmjs.org/deep-extend/-/deep-extend-0.2.5.tgz
+npm http GET https://registry.npmjs.org/retry/-/retry-0.6.0.tgz
+npm http 200 https://registry.npmjs.org/inherits
+npm http GET https://registry.npmjs.org/osenv/-/osenv-0.0.3.tgz
+npm http GET https://registry.npmjs.org/inherits/-/inherits-2.0.0.tgz
+npm http 200 https://registry.npmjs.org/configstore/-/configstore-0.1.2.tgz
+npm http 200 https://registry.npmjs.org/request/-/request-2.22.0.tgz
+npm http 200 https://registry.npmjs.org/optimist
+npm http GET https://registry.npmjs.org/match-stream
+npm http GET https://registry.npmjs.org/minimatch
+npm http GET https://registry.npmjs.org/pullstream
+npm http GET https://registry.npmjs.org/binary
+npm http GET https://registry.npmjs.org/readable-stream
+npm http 200 https://registry.npmjs.org/read/-/read-1.0.5.tgz
+npm http GET https://registry.npmjs.org/setimmediate
+npm http 200 https://registry.npmjs.org/retry/-/retry-0.6.0.tgz
+npm http 200 https://registry.npmjs.org/minimatch
+npm http GET https://registry.npmjs.org/optimist/-/optimist-0.6.0.tgz
+npm http 200 https://registry.npmjs.org/throttleit/-/throttleit-0.0.2.tgz
+npm http GET https://registry.npmjs.org/minimatch/-/minimatch-0.2.12.tgz
+npm http 200 https://registry.npmjs.org/deep-extend/-/deep-extend-0.2.5.tgz
+npm http 200 https://registry.npmjs.org/osenv/-/osenv-0.0.3.tgz
+npm http 200 https://registry.npmjs.org/inherits/-/inherits-2.0.0.tgz
+npm http 200 https://registry.npmjs.org/optimist/-/optimist-0.6.0.tgz
+npm http 200 https://registry.npmjs.org/minimatch/-/minimatch-0.2.12.tgz
+npm http GET https://registry.npmjs.org/async
+npm http 200 https://registry.npmjs.org/readable-stream
+npm http 200 https://registry.npmjs.org/match-stream
+npm http 200 https://registry.npmjs.org/binary
+npm http GET https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.2.tgz
+npm http GET https://registry.npmjs.org/binary/-/binary-0.3.0.tgz
+npm http GET https://registry.npmjs.org/match-stream/-/match-stream-0.0.2.tgz
+npm http 304 https://registry.npmjs.org/async
+npm http 200 https://registry.npmjs.org/setimmediate
+npm http 200 https://registry.npmjs.org/pullstream
+npm http GET https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.1.tgz
+npm http GET https://registry.npmjs.org/pullstream/-/pullstream-0.4.0.tgz
+npm http 200 https://registry.npmjs.org/minimatch
+npm http GET https://registry.npmjs.org/block-stream
+npm http 200 https://registry.npmjs.org/binary/-/binary-0.3.0.tgz
+npm http 200 https://registry.npmjs.org/match-stream/-/match-stream-0.0.2.tgz
+npm http 200 https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.2.tgz
+npm http 200 https://registry.npmjs.org/pullstream/-/pullstream-0.4.0.tgz
+npm http 200 https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.1.tgz
+npm http 200 https://registry.npmjs.org/block-stream
+npm http GET https://registry.npmjs.org/block-stream/-/block-stream-0.0.7.tgz
+npm http 200 https://registry.npmjs.org/block-stream/-/block-stream-0.0.7.tgz
+npm http GET https://registry.npmjs.org/uglify-js
+npm http GET https://registry.npmjs.org/optimist/-/optimist-0.3.7.tgz
+npm http GET https://registry.npmjs.org/qs
+npm http GET https://registry.npmjs.org/json-stringify-safe
+npm http GET https://registry.npmjs.org/tunnel-agent
+npm http GET https://registry.npmjs.org/forever-agent
+npm http GET https://registry.npmjs.org/http-signature
+npm http GET https://registry.npmjs.org/hawk
+npm http GET https://registry.npmjs.org/aws-sign
+npm http GET https://registry.npmjs.org/cookie-jar
+npm http GET https://registry.npmjs.org/oauth-sign
+npm http GET https://registry.npmjs.org/mime
+npm http GET https://registry.npmjs.org/node-uuid
+npm http 200 https://registry.npmjs.org/optimist/-/optimist-0.3.7.tgz
+npm http GET https://registry.npmjs.org/form-data
+npm http GET https://registry.npmjs.org/mute-stream
+npm http 304 https://registry.npmjs.org/qs
+npm http 304 https://registry.npmjs.org/forever-agent
+npm http 304 https://registry.npmjs.org/tunnel-agent
+npm http 304 https://registry.npmjs.org/json-stringify-safe
+npm http 304 https://registry.npmjs.org/http-signature
+npm http GET https://registry.npmjs.org/forever-agent/-/forever-agent-0.5.0.tgz
+npm http GET https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.0.tgz
+npm http 304 https://registry.npmjs.org/hawk
+npm http 304 https://registry.npmjs.org/aws-sign
+npm http 304 https://registry.npmjs.org/cookie-jar
+npm http GET https://registry.npmjs.org/lodash
+npm http GET https://registry.npmjs.org/cli-color
+npm http GET https://registry.npmjs.org/mute-stream/0.0.3
+npm http 304 https://registry.npmjs.org/oauth-sign
+npm http 304 https://registry.npmjs.org/mime
+npm http 304 https://registry.npmjs.org/node-uuid
+npm http 304 https://registry.npmjs.org/form-data
+npm http 200 https://registry.npmjs.org/mute-stream
+npm http 200 https://registry.npmjs.org/mute-stream/0.0.3
+npm http GET https://registry.npmjs.org/async/-/async-0.2.9.tgz
+npm http GET https://registry.npmjs.org/hawk/-/hawk-1.0.0.tgz
+npm http GET https://registry.npmjs.org/mime/-/mime-1.2.10.tgz
+npm http GET https://registry.npmjs.org/node-uuid/-/node-uuid-1.4.0.tgz
+npm http GET https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.3.tgz
+npm http 200 https://registry.npmjs.org/forever-agent/-/forever-agent-0.5.0.tgz
+npm http 200 https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.0.tgz
+npm http 200 https://registry.npmjs.org/uglify-js
+npm http 200 https://registry.npmjs.org/cli-color
+npm http GET https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.4.tgz
+npm http 200 https://registry.npmjs.org/node-uuid/-/node-uuid-1.4.0.tgz
+npm http 200 https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.3.tgz
+npm http GET https://registry.npmjs.org/uglify-js/-/uglify-js-2.3.6.tgz
+npm http GET https://registry.npmjs.org/cli-color/-/cli-color-0.2.2.tgz
+npm http 200 https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.4.tgz
+npm http 200 https://registry.npmjs.org/uglify-js/-/uglify-js-2.3.6.tgz
+npm http 200 https://registry.npmjs.org/mime/-/mime-1.2.10.tgz
+npm http 200 https://registry.npmjs.org/hawk/-/hawk-1.0.0.tgz
+npm http 200 https://registry.npmjs.org/cli-color/-/cli-color-0.2.2.tgz
+npm http 200 https://registry.npmjs.org/async/-/async-0.2.9.tgz
+npm http 200 https://registry.npmjs.org/lodash
+npm http GET https://registry.npmjs.org/lodash/-/lodash-1.2.1.tgz
+npm http 200 https://registry.npmjs.org/lodash/-/lodash-1.2.1.tgz
+npm http GET https://registry.npmjs.org/sigmund
+npm http 200 https://registry.npmjs.org/sigmund
+npm http GET https://registry.npmjs.org/sigmund/-/sigmund-1.0.0.tgz
+npm http 200 https://registry.npmjs.org/sigmund/-/sigmund-1.0.0.tgz
+npm http GET https://registry.npmjs.org/wordwrap
+npm http GET https://registry.npmjs.org/minimist
+npm http 200 https://registry.npmjs.org/wordwrap
+npm http 200 https://registry.npmjs.org/minimist
+npm http GET https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.2.tgz
+npm http GET https://registry.npmjs.org/minimist/-/minimist-0.0.1.tgz
+npm http 200 https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.2.tgz
+npm http 200 https://registry.npmjs.org/minimist/-/minimist-0.0.1.tgz
+npm http GET https://registry.npmjs.org/over
+npm http GET https://registry.npmjs.org/slice-stream/0.0.0
+npm http GET https://registry.npmjs.org/yamljs
+npm http GET https://registry.npmjs.org/buffers
+npm http 200 https://registry.npmjs.org/slice-stream/0.0.0
+npm http 200 https://registry.npmjs.org/over
+npm http GET https://registry.npmjs.org/slice-stream/-/slice-stream-0.0.0.tgz
+npm http GET https://registry.npmjs.org/over/-/over-0.0.5.tgz
+npm http GET https://registry.npmjs.org/chainsaw
+npm http 200 https://registry.npmjs.org/buffers
+npm http 200 https://registry.npmjs.org/yamljs
+npm http 200 https://registry.npmjs.org/slice-stream/-/slice-stream-0.0.0.tgz
+npm http 200 https://registry.npmjs.org/over/-/over-0.0.5.tgz
+npm http GET https://registry.npmjs.org/buffers/-/buffers-0.1.1.tgz
+npm http GET https://registry.npmjs.org/yamljs/-/yamljs-0.1.4.tgz
+npm http 200 https://registry.npmjs.org/chainsaw
+npm http GET https://registry.npmjs.org/chainsaw/-/chainsaw-0.1.0.tgz
+npm http GET https://registry.npmjs.org/async
+npm http GET https://registry.npmjs.org/combined-stream
+npm http 200 https://registry.npmjs.org/buffers/-/buffers-0.1.1.tgz
+npm http 200 https://registry.npmjs.org/yamljs/-/yamljs-0.1.4.tgz
+npm http GET https://registry.npmjs.org/assert-plus/0.1.2
+npm http GET https://registry.npmjs.org/ctype/0.5.2
+npm http GET https://registry.npmjs.org/asn1/0.1.11
+npm http 200 https://registry.npmjs.org/chainsaw/-/chainsaw-0.1.0.tgz
+npm http 304 https://registry.npmjs.org/async
+npm http 304 https://registry.npmjs.org/combined-stream
+npm http 304 https://registry.npmjs.org/assert-plus/0.1.2
+npm http 304 https://registry.npmjs.org/ctype/0.5.2
+npm http 304 https://registry.npmjs.org/asn1/0.1.11
+npm http GET https://registry.npmjs.org/assert-plus/-/assert-plus-0.1.2.tgz
+npm http GET https://registry.npmjs.org/ctype/-/ctype-0.5.2.tgz
+npm http GET https://registry.npmjs.org/asn1/-/asn1-0.1.11.tgz
+npm http GET https://registry.npmjs.org/form-data/0.0.8
+npm http GET https://registry.npmjs.org/forever-agent
+npm http GET https://registry.npmjs.org/tunnel-agent
+npm http GET https://registry.npmjs.org/http-signature
+npm http GET https://registry.npmjs.org/hawk
+npm http GET https://registry.npmjs.org/aws-sign
+npm http GET https://registry.npmjs.org/cookie-jar
+npm http GET https://registry.npmjs.org/node-uuid
+npm http GET https://registry.npmjs.org/oauth-sign
+npm http GET https://registry.npmjs.org/mime
+npm http GET https://registry.npmjs.org/qs
+npm http 200 https://registry.npmjs.org/assert-plus/-/assert-plus-0.1.2.tgz
+npm http GET https://registry.npmjs.org/json-stringify-safe
+npm http 200 https://registry.npmjs.org/asn1/-/asn1-0.1.11.tgz
+npm http 200 https://registry.npmjs.org/ctype/-/ctype-0.5.2.tgz
+npm http 304 https://registry.npmjs.org/forever-agent
+npm http 304 https://registry.npmjs.org/http-signature
+npm http 304 https://registry.npmjs.org/tunnel-agent
+npm http 304 https://registry.npmjs.org/hawk
+npm http 200 https://registry.npmjs.org/form-data/0.0.8
+npm http 304 https://registry.npmjs.org/aws-sign
+npm http 304 https://registry.npmjs.org/cookie-jar
+npm http 304 https://registry.npmjs.org/node-uuid
+npm http 304 https://registry.npmjs.org/oauth-sign
+npm http 304 https://registry.npmjs.org/mime
+npm http 304 https://registry.npmjs.org/qs
+npm http 304 https://registry.npmjs.org/json-stringify-safe
+npm http GET https://registry.npmjs.org/form-data/-/form-data-0.0.8.tgz
+npm http GET https://registry.npmjs.org/forever-agent/-/forever-agent-0.5.0.tgz
+npm http GET https://registry.npmjs.org/http-signature/-/http-signature-0.10.0.tgz
+npm http GET https://registry.npmjs.org/hawk/-/hawk-0.13.1.tgz
+npm http GET https://registry.npmjs.org/aws-sign/-/aws-sign-0.3.0.tgz
+npm http GET https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-4.0.0.tgz
+npm http GET https://registry.npmjs.org/cookie-jar/-/cookie-jar-0.3.0.tgz
+npm http GET https://registry.npmjs.org/oauth-sign/-/oauth-sign-0.3.0.tgz
+npm http GET https://registry.npmjs.org/node-uuid/-/node-uuid-1.4.0.tgz
+npm http GET https://registry.npmjs.org/mime/-/mime-1.2.10.tgz
+npm http GET https://registry.npmjs.org/delayed-stream/0.0.5
+npm http GET https://registry.npmjs.org/traverse
+npm http GET https://registry.npmjs.org/hoek
+npm http GET https://registry.npmjs.org/cryptiles
+npm http GET https://registry.npmjs.org/boom
+npm http GET https://registry.npmjs.org/sntp
+npm http 200 https://registry.npmjs.org/form-data/-/form-data-0.0.8.tgz
+npm http 200 https://registry.npmjs.org/forever-agent/-/forever-agent-0.5.0.tgz
+npm http 200 https://registry.npmjs.org/http-signature/-/http-signature-0.10.0.tgz
+npm http 200 https://registry.npmjs.org/aws-sign/-/aws-sign-0.3.0.tgz
+npm http 200 https://registry.npmjs.org/hawk/-/hawk-0.13.1.tgz
+npm http 304 https://registry.npmjs.org/delayed-stream/0.0.5
+npm http GET https://registry.npmjs.org/delayed-stream/-/delayed-stream-0.0.5.tgz
+npm http 304 https://registry.npmjs.org/sntp
+npm http 200 https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-4.0.0.tgz
+npm http 200 https://registry.npmjs.org/cookie-jar/-/cookie-jar-0.3.0.tgz
+npm http 200 https://registry.npmjs.org/oauth-sign/-/oauth-sign-0.3.0.tgz
+npm http 304 https://registry.npmjs.org/hoek
+npm http 304 https://registry.npmjs.org/boom
+npm http 304 https://registry.npmjs.org/cryptiles
+npm http 200 https://registry.npmjs.org/node-uuid/-/node-uuid-1.4.0.tgz
+npm http 200 https://registry.npmjs.org/delayed-stream/-/delayed-stream-0.0.5.tgz
+npm http 200 https://registry.npmjs.org/mime/-/mime-1.2.10.tgz
+npm http 200 https://registry.npmjs.org/traverse
+npm http GET https://registry.npmjs.org/cryptiles/-/cryptiles-0.2.2.tgz
+npm http GET https://registry.npmjs.org/traverse/-/traverse-0.3.9.tgz
+npm http 200 https://registry.npmjs.org/traverse/-/traverse-0.3.9.tgz
+npm http 200 https://registry.npmjs.org/cryptiles/-/cryptiles-0.2.2.tgz
+npm http GET https://registry.npmjs.org/source-map
+npm http 200 https://registry.npmjs.org/source-map
+npm http GET https://registry.npmjs.org/source-map/-/source-map-0.1.27.tgz
+npm http 200 https://registry.npmjs.org/source-map/-/source-map-0.1.27.tgz
+npm http GET https://registry.npmjs.org/assert-plus/-/assert-plus-0.1.2.tgz
+npm http GET https://registry.npmjs.org/asn1/-/asn1-0.1.11.tgz
+npm http 200 https://registry.npmjs.org/assert-plus/-/assert-plus-0.1.2.tgz
+npm http 200 https://registry.npmjs.org/asn1/-/asn1-0.1.11.tgz
+npm http GET https://registry.npmjs.org/hoek/-/hoek-0.8.5.tgz
+npm http GET https://registry.npmjs.org/sntp/-/sntp-0.2.4.tgz
+npm http 200 https://registry.npmjs.org/sntp/-/sntp-0.2.4.tgz
+npm http 200 https://registry.npmjs.org/hoek/-/hoek-0.8.5.tgz
+npm http GET https://registry.npmjs.org/amdefine
+npm http 200 https://registry.npmjs.org/amdefine
+npm http GET https://registry.npmjs.org/amdefine/-/amdefine-0.0.5.tgz
+npm http 200 https://registry.npmjs.org/amdefine/-/amdefine-0.0.5.tgz
+npm http GET https://registry.npmjs.org/es5-ext
+npm http GET https://registry.npmjs.org/memoizee
+npm http GET https://registry.npmjs.org/argparse
+npm http GET https://registry.npmjs.org/glob
+npm http 304 https://registry.npmjs.org/glob
+npm http GET https://registry.npmjs.org/glob/-/glob-3.1.21.tgz
+npm http 200 https://registry.npmjs.org/memoizee
+npm http GET https://registry.npmjs.org/memoizee/-/memoizee-0.2.5.tgz
+npm http 200 https://registry.npmjs.org/es5-ext
+npm http GET https://registry.npmjs.org/es5-ext/-/es5-ext-0.9.2.tgz
+npm http 200 https://registry.npmjs.org/argparse
+npm http GET https://registry.npmjs.org/argparse/-/argparse-0.1.15.tgz
+npm http 200 https://registry.npmjs.org/glob/-/glob-3.1.21.tgz
+npm http 200 https://registry.npmjs.org/memoizee/-/memoizee-0.2.5.tgz
+npm http 200 https://registry.npmjs.org/es5-ext/-/es5-ext-0.9.2.tgz
+npm http 200 https://registry.npmjs.org/argparse/-/argparse-0.1.15.tgz
+npm http GET https://registry.npmjs.org/graceful-fs
+npm http GET https://registry.npmjs.org/inherits
+npm http GET https://registry.npmjs.org/minimatch
+npm http GET https://registry.npmjs.org/underscore
+npm http GET https://registry.npmjs.org/underscore.string
+npm http 304 https://registry.npmjs.org/graceful-fs
+npm http 304 https://registry.npmjs.org/inherits
+npm http 304 https://registry.npmjs.org/minimatch
+npm http GET https://registry.npmjs.org/graceful-fs/-/graceful-fs-1.2.3.tgz
+npm http GET https://registry.npmjs.org/inherits/-/inherits-1.0.0.tgz
+npm http 200 https://registry.npmjs.org/underscore
+npm http GET https://registry.npmjs.org/underscore/-/underscore-1.4.4.tgz
+npm http 200 https://registry.npmjs.org/graceful-fs/-/graceful-fs-1.2.3.tgz
+npm http 200 https://registry.npmjs.org/inherits/-/inherits-1.0.0.tgz
+npm http 200 https://registry.npmjs.org/underscore.string
+npm http 200 https://registry.npmjs.org/underscore/-/underscore-1.4.4.tgz
+npm http GET https://registry.npmjs.org/underscore.string/-/underscore.string-2.3.3.tgz
+npm http 200 https://registry.npmjs.org/underscore.string/-/underscore.string-2.3.3.tgz
+npm http GET https://registry.npmjs.org/sigmund
+npm http 304 https://registry.npmjs.org/sigmund
+npm http GET https://registry.npmjs.org/event-emitter
+npm http GET https://registry.npmjs.org/next-tick
+npm http 200 https://registry.npmjs.org/event-emitter
+npm http 200 https://registry.npmjs.org/next-tick
+npm http GET https://registry.npmjs.org/event-emitter/-/event-emitter-0.2.2.tgz
+npm http GET https://registry.npmjs.org/next-tick/-/next-tick-0.1.0.tgz
+npm http 200 https://registry.npmjs.org/next-tick/-/next-tick-0.1.0.tgz
+npm http 200 https://registry.npmjs.org/event-emitter/-/event-emitter-0.2.2.tgz
+/usr/local/bin/bower -> /usr/local/lib/node_modules/bower/bin/bower
+bower@1.0.3 /usr/local/lib/node_modules/bower
+├── junk@0.2.1
+├── sudo-block@0.2.0
+├── stringify-object@0.1.4
+├── abbrev@1.0.4
+├── which@1.0.5
+├── chmodr@0.1.0
+├── graceful-fs@2.0.0
+├── archy@0.0.2
+├── bower-logger@0.1.0
+├── rimraf@2.2.2
+├── colors@0.6.1
+├── open@0.0.4
+├── bower-endpoint-parser@0.2.0
+├── nopt@2.1.2
+├── lru-cache@2.3.0
+├── tmp@0.0.20
+├── mkdirp@0.3.5
+├── q@0.9.6
+├── semver@2.0.11
+├── bower-json@0.2.0 (deep-extend@0.2.5)
+├── bower-registry-client@0.1.1 (async@0.2.9)
+├── fstream@0.1.24 (inherits@2.0.0)
+├── request-progress@0.2.1 (throttleit@0.0.2)
+├── request-replay@0.1.4 (deep-extend@0.2.5, retry@0.6.0)
+├── promptly@0.2.0 (read@1.0.5)
+├── tar@0.1.18 (inherits@2.0.0, block-stream@0.0.7)
+├── fstream-ignore@0.0.7 (inherits@2.0.0, minimatch@0.2.12)
+├── glob@3.2.6 (inherits@2.0.0, minimatch@0.2.12)
+├── bower-config@0.2.0-rc.1 (osenv@0.0.3, optimist@0.6.0)
+├── mout@0.6.0
+├── unzip@0.1.8 (setimmediate@1.0.1, readable-stream@1.0.2, match-stream@0.0.2, pullstream@0.4.0, binary@0.3.0)
+├── request@2.25.0 (aws-sign@0.3.0, qs@0.6.5, tunnel-agent@0.3.0, forever-agent@0.5.0, json-stringify-safe@5.0.0, oauth-sign@0.3.0, cookie-jar@0.3.0, node-uuid@1.4.0, mime@1.2.10, form-data@0.1.0, hawk@1.0.0, http-signature@0.10.0)
+├── handlebars@1.0.12 (optimist@0.3.7, uglify-js@2.3.6)
+├── update-notifier@0.1.4 (request@2.22.0, configstore@0.1.2)
+└── inquirer@0.2.3 (mute-stream@0.0.3, async@0.2.9, lodash@1.2.1, cli-color@0.2.2)
+administrators-MacBook-Air-2:chapter02 william.reilly$
+
+
+
+/ DIGRESSION    (~600 lines!)
+
+
+INSTALLED BOOTSTRAP  (albeit to wrong place; deleted, re-installed elsewhere...)
+
+
+administrators-MacBook-Air-2:chapter02 william.reilly$ bower install bootstrapbower not-cached    git://github.com/twbs/bootstrap.git#*
+bower resolve       git://github.com/twbs/bootstrap.git#*
+bower download      http://github.com/twbs/bootstrap/archive/v3.0.0-rc1.tar.gz
+bower extract       archive.tar.gz
+bower mismatch      Version declared in the json (3.0.0) is different than the resolved one (3.0.0-rc1)
+bower resolved      git://github.com/twbs/bootstrap.git#3.0.0-rc1
+bower not-cached    git://github.com/components/jquery.git#>= 1.9.0
+bower resolve       git://github.com/components/jquery.git#>= 1.9.0
+bower download      http://github.com/components/jquery/archive/2.0.3.tar.gz
+bower extract       archive.tar.gz
+bower resolved      git://github.com/components/jquery.git#2.0.3
+bower install       bootstrap#3.0.0-rc1
+bower install       jquery#2.0.3
+
+bootstrap#3.0.0-rc1 bower_components/bootstrap
+└── jquery#2.0.3
+
+jquery#2.0.3 bower_components/jquery
+administrators-MacBook-Air-2:chapter02 william.reilly$ pwd
+/Users/william.reilly/dev/Node/JumpStart-Node/wr_dev/chapter02
+administrators-MacBook-Air-2:chapter02 william.reilly$ ls -latr
+total 32
+drwxr-xr-x   5 william.reilly  1401193556  170 Jul 27 06:28 ..
+drwxr-xr-x   4 william.reilly  1401193556  136 Jul 27 07:03 test
+-rw-r--r--   1 william.reilly  1401193556  182 Jul 27 07:06 package.json~
+-rw-r--r--   1 william.reilly  1401193556   54 Jul 27 07:07 Makefile
+-rw-r--r--   1 william.reilly  1401193556  164 Jul 27 07:09 package.json
+drwxr-xr-x   6 william.reilly  1401193556  204 Jul 27 07:11 node_modules
+drwxr-xr-x   6 william.reilly  1401193556  204 Jul 29 07:26 lib
+-rw-r--r--   1 william.reilly  1401193556  656 Jul 29 07:27 nockmarket.js
+drwxr-xr-x   4 william.reilly  1401193556  136 Jul 30 05:27 bower_components
+drwxr-xr-x  10 william.reilly  1401193556  340 Jul 30 05:27 .
+administrators-MacBook-Air-2:chapter02 william.reilly$ du -h bower_components/
+ 48K	bower_components//bootstrap/_includes
+ 12K	bower_components//bootstrap/_layouts
+ 24K	bower_components//bootstrap/assets/css
+ 28K	bower_components//bootstrap/assets/ico
+124K	bower_components//bootstrap/assets/js
+176K	bower_components//bootstrap/assets
+152K	bower_components//bootstrap/dist/css
+ 84K	bower_components//bootstrap/dist/js
+236K	bower_components//bootstrap/dist
+ 96K	bower_components//bootstrap/js/tests/unit
+140K	bower_components//bootstrap/js/tests/vendor
+248K	bower_components//bootstrap/js/tests
+328K	bower_components//bootstrap/js
+212K	bower_components//bootstrap/less
+1.4M	bower_components//bootstrap
+500K	bower_components//jquery
+1.8M	bower_components/
+administrators-MacBook-Air-2:chapter02 william.reilly$ pwd
+/Users/william.reilly/dev/Node/JumpStart-Node/wr_dev/chapter02
+
+
+RE-INSTALL BOOTSRAP
+
+administrators-MacBook-Air-2:LMSAdminTool william.reilly$ pwd
+/Users/william.reilly/dev/HBSP/LMSAdminTool
+administrators-MacBook-Air-2:LMSAdminTool william.reilly$ mkdir ToolRoot
+administrators-MacBook-Air-2:LMSAdminTool william.reilly$ cd ToolRoot/
+administrators-MacBook-Air-2:ToolRoot william.reilly$ bower install bootstrap
+bower cached        git://github.com/twbs/bootstrap.git#3.0.0-rc1
+bower validate      3.0.0-rc1 against git://github.com/twbs/bootstrap.git#*
+bower cached        git://github.com/components/jquery.git#2.0.3
+bower validate      2.0.3 against git://github.com/components/jquery.git#>= 1.9.0
+bower install       bootstrap#3.0.0-rc1
+bower install       jquery#2.0.3
+
+bootstrap#3.0.0-rc1 bower_components/bootstrap
+└── jquery#2.0.3
+
+jquery#2.0.3 bower_components/jquery
+administrators-MacBook-Air-2:ToolRoot william.reilly$ ls -la
+total 0
+drwxr-xr-x  3 william.reilly  1401193556  102 Jul 30 05:37 .
+drwxr-xr-x  3 william.reilly  1401193556  102 Jul 30 05:37 ..
+drwxr-xr-x  4 william.reilly  1401193556  136 Jul 30 05:37 bower_components
+administrators-MacBook-Air-2:ToolRoot william.reilly$ find .
+.
+./bower_components
+./bower_components/bootstrap
+./bower_components/bootstrap/.bower.json
+./bower_components/bootstrap/_config.yml
+./bower_components/bootstrap/_includes
+./bower_components/bootstrap/_includes/ads.html
+./bower_components/bootstrap/_includes/footer.html
+./bower_components/bootstrap/_includes/header.html
+./bower_components/bootstrap/_includes/nav-components.html
+./bower_components/bootstrap/_includes/nav-css.html
+./bower_components/bootstrap/_includes/nav-customize.html
+./bower_components/bootstrap/_includes/nav-getting-started.html
+./bower_components/bootstrap/_includes/nav-javascript.html
+./bower_components/bootstrap/_includes/nav-main.html
+./bower_components/bootstrap/_includes/old-bs-docs.html
+./bower_components/bootstrap/_includes/social-buttons.html
+./bower_components/bootstrap/_layouts
+./bower_components/bootstrap/_layouts/customize.html
+./bower_components/bootstrap/_layouts/default.html
+./bower_components/bootstrap/_layouts/home.html
+./bower_components/bootstrap/assets
+./bower_components/bootstrap/assets/css
+./bower_components/bootstrap/assets/css/docs.css
+./bower_components/bootstrap/assets/css/pygments-manni.css
+./bower_components/bootstrap/assets/ico
+./bower_components/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png
+./bower_components/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png
+./bower_components/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png
+./bower_components/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png
+./bower_components/bootstrap/assets/ico/favicon.png
+./bower_components/bootstrap/assets/js
+./bower_components/bootstrap/assets/js/application.js
+./bower_components/bootstrap/assets/js/holder.js
+./bower_components/bootstrap/assets/js/html5shiv.js
+./bower_components/bootstrap/assets/js/jquery.js
+./bower_components/bootstrap/assets/js/respond.min.js
+./bower_components/bootstrap/bower.json
+./bower_components/bootstrap/CNAME
+./bower_components/bootstrap/components.html
+./bower_components/bootstrap/composer.json
+./bower_components/bootstrap/CONTRIBUTING.md
+./bower_components/bootstrap/css.html
+./bower_components/bootstrap/customize.html
+./bower_components/bootstrap/dist
+./bower_components/bootstrap/dist/css
+./bower_components/bootstrap/dist/css/bootstrap.css
+./bower_components/bootstrap/dist/css/bootstrap.min.css
+./bower_components/bootstrap/dist/js
+./bower_components/bootstrap/dist/js/bootstrap.js
+./bower_components/bootstrap/dist/js/bootstrap.min.js
+./bower_components/bootstrap/getting-started.html
+./bower_components/bootstrap/Gruntfile.js
+./bower_components/bootstrap/index.html
+./bower_components/bootstrap/javascript.html
+./bower_components/bootstrap/js
+./bower_components/bootstrap/js/.jshintrc
+./bower_components/bootstrap/js/affix.js
+./bower_components/bootstrap/js/alert.js
+./bower_components/bootstrap/js/button.js
+./bower_components/bootstrap/js/carousel.js
+./bower_components/bootstrap/js/collapse.js
+./bower_components/bootstrap/js/dropdown.js
+./bower_components/bootstrap/js/modal.js
+./bower_components/bootstrap/js/popover.js
+./bower_components/bootstrap/js/scrollspy.js
+./bower_components/bootstrap/js/tab.js
+./bower_components/bootstrap/js/tests
+./bower_components/bootstrap/js/tests/index.html
+./bower_components/bootstrap/js/tests/phantom.js
+./bower_components/bootstrap/js/tests/server.js
+./bower_components/bootstrap/js/tests/unit
+./bower_components/bootstrap/js/tests/unit/affix.js
+./bower_components/bootstrap/js/tests/unit/alert.js
+./bower_components/bootstrap/js/tests/unit/button.js
+./bower_components/bootstrap/js/tests/unit/carousel.js
+./bower_components/bootstrap/js/tests/unit/collapse.js
+./bower_components/bootstrap/js/tests/unit/dropdown.js
+./bower_components/bootstrap/js/tests/unit/modal.js
+./bower_components/bootstrap/js/tests/unit/phantom.js
+./bower_components/bootstrap/js/tests/unit/popover.js
+./bower_components/bootstrap/js/tests/unit/scrollspy.js
+./bower_components/bootstrap/js/tests/unit/tab.js
+./bower_components/bootstrap/js/tests/unit/tooltip.js
+./bower_components/bootstrap/js/tests/unit/transition.js
+./bower_components/bootstrap/js/tests/vendor
+./bower_components/bootstrap/js/tests/vendor/jquery.js
+./bower_components/bootstrap/js/tests/vendor/qunit.css
+./bower_components/bootstrap/js/tests/vendor/qunit.js
+./bower_components/bootstrap/js/tooltip.js
+./bower_components/bootstrap/js/transition.js
+./bower_components/bootstrap/less
+./bower_components/bootstrap/less/accordion.less
+./bower_components/bootstrap/less/alerts.less
+./bower_components/bootstrap/less/badges.less
+./bower_components/bootstrap/less/bootstrap.less
+./bower_components/bootstrap/less/breadcrumbs.less
+./bower_components/bootstrap/less/button-groups.less
+./bower_components/bootstrap/less/buttons.less
+./bower_components/bootstrap/less/carousel.less
+./bower_components/bootstrap/less/close.less
+./bower_components/bootstrap/less/code.less
+./bower_components/bootstrap/less/component-animations.less
+./bower_components/bootstrap/less/dropdowns.less
+./bower_components/bootstrap/less/forms.less
+./bower_components/bootstrap/less/grid.less
+./bower_components/bootstrap/less/jumbotron.less
+./bower_components/bootstrap/less/labels.less
+./bower_components/bootstrap/less/list-group.less
+./bower_components/bootstrap/less/media.less
+./bower_components/bootstrap/less/mixins.less
+./bower_components/bootstrap/less/modals.less
+./bower_components/bootstrap/less/navbar.less
+./bower_components/bootstrap/less/navs.less
+./bower_components/bootstrap/less/normalize.less
+./bower_components/bootstrap/less/pager.less
+./bower_components/bootstrap/less/pagination.less
+./bower_components/bootstrap/less/panels.less
+./bower_components/bootstrap/less/popovers.less
+./bower_components/bootstrap/less/print.less
+./bower_components/bootstrap/less/progress-bars.less
+./bower_components/bootstrap/less/responsive-utilities.less
+./bower_components/bootstrap/less/scaffolding.less
+./bower_components/bootstrap/less/tables.less
+./bower_components/bootstrap/less/thumbnails.less
+./bower_components/bootstrap/less/tooltip.less
+./bower_components/bootstrap/less/type.less
+./bower_components/bootstrap/less/utilities.less
+./bower_components/bootstrap/less/variables.less
+./bower_components/bootstrap/less/wells.less
+./bower_components/bootstrap/LICENSE
+./bower_components/bootstrap/package.json
+./bower_components/bootstrap/README.md
+./bower_components/jquery
+./bower_components/jquery/.bower.json
+./bower_components/jquery/.gitignore
+./bower_components/jquery/bower.json
+./bower_components/jquery/component.json
+./bower_components/jquery/composer.json
+./bower_components/jquery/jquery-migrate.js
+./bower_components/jquery/jquery-migrate.min.js
+./bower_components/jquery/jquery.js
+./bower_components/jquery/jquery.min.js
+./bower_components/jquery/jquery.min.map
+./bower_components/jquery/package.json
+./bower_components/jquery/README.md
+administrators-MacBook-Air-2:ToolRoot william.reilly$ 
+
+
+
+
+&&&&&&&&&&&&     GIT    &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+administrators-MacBook-Air-2:LMSAdminTool william.reilly$ cat .gitignore 
+# Git Pocket Guide, p. 42-44
+# July 30, 2013
+# /Users/william.reilly/dev/HBSP/LMSAdminTool/.gitignore
+
+ToolRoot/bower_components/
+
+# That oughta do itadministrators-MacBook-Air-2:LMSAdminTool william.reilly$ 
+
+
+administrators-MacBook-Air-2:LMSAdminTool william.reilly$ ls
+ToolRoot
+administrators-MacBook-Air-2:LMSAdminTool william.reilly$ git init
+Initialized empty Git repository in /Users/william.reilly/dev/HBSP/LMSAdminTool/.git/
+administrators-MacBook-Air-2:LMSAdminTool william.reilly$ ls -la
+total 8
+drwxr-xr-x   5 william.reilly  1401193556  170 Jul 30 14:50 .
+drwx------+  9 william.reilly  1401193556  306 Jul 30 05:29 ..
+drwxr-xr-x  10 william.reilly  1401193556  340 Jul 30 14:50 .git
+-rw-r--r--   1 william.reilly  1401193556  150 Jul 30 14:50 .gitignore
+drwxr-xr-x  12 william.reilly  1401193556  408 Jul 30 11:05 ToolRoot
+administrators-MacBook-Air-2:LMSAdminTool william.reilly$ ls -la .git/
+total 24
+drwxr-xr-x  10 william.reilly  1401193556  340 Jul 30 14:50 .
+drwxr-xr-x   5 william.reilly  1401193556  170 Jul 30 14:50 ..
+-rw-r--r--   1 william.reilly  1401193556   23 Jul 30 14:50 HEAD
+drwxr-xr-x   2 william.reilly  1401193556   68 Jul 30 14:50 branches
+-rw-r--r--   1 william.reilly  1401193556  111 Jul 30 14:50 config
+-rw-r--r--   1 william.reilly  1401193556   73 Jul 30 14:50 description
+drwxr-xr-x  10 william.reilly  1401193556  340 Jul 30 14:50 hooks
+drwxr-xr-x   3 william.reilly  1401193556  102 Jul 30 14:50 info
+drwxr-xr-x   4 william.reilly  1401193556  136 Jul 30 14:50 objects
+drwxr-xr-x   4 william.reilly  1401193556  136 Jul 30 14:50 refs
+administrators-MacBook-Air-2:LMSAdminTool william.reilly$ git add .
+administrators-MacBook-Air-2:LMSAdminTool william.reilly$ git commit -m 'Foist time ever with Git. Bit of HTML using Bootstrap for the Higher Ed "Learning Management System" (LMS) "Learning Tools Interoperability" (LTI) integration project. Cheers.'
+[master (root-commit) c9660c4] Foist time ever with Git. Bit of HTML using Bootstrap for the Higher Ed "Learning Management System" (LMS) "Learning Tools Interoperability" (LTI) integration project. Cheers.
+ Committer: Reilly <william.reilly@administrators-MacBook-Air-2.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 12 files changed, 9560 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 ToolRoot/AT-03-ContentAccessProfiles.html
+ create mode 100644 ToolRoot/AT-04-ProductTemplateParts.html
+ create mode 100644 ToolRoot/AT-05-ProductCriteria.html
+ create mode 100644 ToolRoot/Bootstrap101.html
+ create mode 100644 ToolRoot/BootstrapStarterTemplate.html
+ create mode 100644 ToolRoot/HE-LMS-AdminTool.html
+ create mode 100644 ToolRoot/css/bootstrap.css
+ create mode 100644 ToolRoot/css/bootstrap.min.css
+ create mode 100644 ToolRoot/js/bootstrap.js
+ create mode 100644 ToolRoot/js/bootstrap.min.js
+ create mode 100644 ToolRoot/starter-template.css
+administrators-MacBook-Air-2:LMSAdminTool william.reilly$
+
+administrators-MacBook-Air-2:LMSAdminTool william.reilly$ git config --global user.name "William Reilly"
+administrators-MacBook-Air-2:LMSAdminTool william.reilly$ git config --global user.email "wreilly@hbsp.harvard.edu"
+administrators-MacBook-Air-2:LMSAdminTool william.reilly$ git commit --amend --reset-author
+error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+administrators-MacBook-Air-2:LMSAdminTool william.reilly$ git commit --amend --reset-author -m 'Amending to reset author. Tried vi, failed there...'
+[master 7480b0c] Amending to reset author. Tried vi, failed there...
+ 12 files changed, 9560 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 ToolRoot/AT-03-ContentAccessProfiles.html
+ create mode 100644 ToolRoot/AT-04-ProductTemplateParts.html
+ create mode 100644 ToolRoot/AT-05-ProductCriteria.html
+ create mode 100644 ToolRoot/Bootstrap101.html
+ create mode 100644 ToolRoot/BootstrapStarterTemplate.html
+ create mode 100644 ToolRoot/HE-LMS-AdminTool.html
+ create mode 100644 ToolRoot/css/bootstrap.css
+ create mode 100644 ToolRoot/css/bootstrap.min.css
+ create mode 100644 ToolRoot/js/bootstrap.js
+ create mode 100644 ToolRoot/js/bootstrap.min.js
+ create mode 100644 ToolRoot/starter-template.css
+administrators-MacBook-Air-2:LMSAdminTool william.reilly$ 
+
+http://liw.iki.fi/liw/texts/vi.html
+
+How to get out of vi
