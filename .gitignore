@@ -3,5 +3,13 @@
 # /Users/william.reilly/dev/HBSP/LMSAdminTool/.gitignore
 
 ToolRoot/bower_components/
-
 # That oughta do it
+
+# Got to get those Emacs backups out too:
+*~
+# Something advanced, to consider: http://amitp.blogspot.com/2007/03/emacs-move-autosave-and-backup-files.html
+
+# Apparently Emacs does autosaves too (do I get these? not seen).
+# Leading character (and closing character as well), is '#'
+# Need to escape that first one, here in .gitignore:
+\#*#
