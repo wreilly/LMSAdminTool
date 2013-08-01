@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Higher Ed - Learning Management Systems (LMS) administration tool</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">HE LMS Admin Tool</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./AT-01-Institutions.html">Institutions</a></li>
+            <li class="active"><a href="#">LMS Contracts</a></li>
+            <li><a href="./AT-03-ContentAccessProfiles.html">Content Access Profiles</a></li>
+            <li><a href="./AT-04-ProductTemplateParts.html">Product Template Parts</a></li>
+            <li><a href="./AT-05-ProductCriteria.html">Product Criteria</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h4>Harvard Business Publishing for Educators : Higher Ed Tech Group</h3>
+        <p class="lead">Learning Management Systems (LMS) administration tool.</p>
+	</div>
+<hr />
+<ol>
+<li>GRANULAR: &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; Select individual <b style="font-size: large;">Product Criteria</b> to create reusable <b style="font-size: large;">Product Template Parts</b> (assemblies).</li>
+<li>COMBINATION: &nbsp; &nbsp; &nbsp; Combine Template Parts into reusable <b style="font-size: large;">Content Access Profiles</b>.</li>
+<li>USE:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Apply Profiles to individual <b style="font-size: large;">LMS Contracts</b>, for certain <b style="font-size: large;">Institutions</b>.</li>
+</ol>
+
+<hr /> <br />
+
+
+
+	<form method="POST" action="http://cbmp.harvard.edu/lmsadmintool">
+	<div class="container"> <!-- WR_ container -->
+		<h3 align="center">LMS Contracts</h4> <br />
+		<div align="center">LMSs (t.b.d.) | LMS Contracts (t.b.d.) </div>
+
+
+		<table class="table table-bordered table-hover table-striped table-condensed">
+			<tbody>
+				<h5>LMSs : </h5> (count: t.b.d.)
+				<th>
+					<td>LMS ID</td>
+					<td>LMS/ORG Name</td>
+					<td>LMS LTI GUID</td>
+					<td>LMS LTI Suffix</td>
+					<td>LMS LTI OAuth Key</td>
+					<td>LMS LTI OAuth Secret</td>
+				<!-- EBS Organization "Bill-To" number. -->
+					<td>Organization ID</td>
+				</th>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div>
+					</td>
+					<td>LMS_01</td>
+					<td>XYZ Univ. Blackboard v9</td>
+					<td>a12345678asdfqwer</td>
+					<td>xyzuniv</td>
+					<td>5dbf348aa966c5f7f07e8ce2ba5e7a3badc234bc</td>
+					<td>fceb3aedb960374e74f559caeabab3562efe97b4</td>
+					<td>223607</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div>
+					</td>
+					<td>LMS_02</td>
+					<td>ABC Univ. Desire2Learn</td>
+					<td>b12345678asdfqwer</td>
+					<td>abcuniv</td>
+					<td>6dbf348aa966c5f7f07e8ce2ba5e7a3badc234bc</td>
+					<td>bceb3aedb960374e74f559caeabab3562efe97b4</td>
+					<td>223690</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div>
+					</td>
+					<td>LMS_03</td>
+					<td>123ABC Univ. Moodle</td>
+					<td>c12345678asdfqwer</td>
+					<td>123abcunivmood</td>
+					<td>7dbf348aa966c5f7f07e8ce2ba5e7a3badc234bc</td>
+					<td>aceb3aedb960374e74f559caeabab3562efe97b4</td>
+					<td>223699</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div>
+					</td>
+					<td>LMS_04</td>
+					<td>123ABC Univ. Blackboard</td>
+					<td>d12345678asdfqwer</td>
+					<td>123abcunivbb</td>
+					<td>8dbf348aa966c5f7f07e8ce2ba5e7a3badc234bc</td>
+					<td>dceb3aedb960374e74f559caeabab3562efe97b4</td>
+					<td>223699</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="radio">
+				      </span>
+				    </div>
+					</td>
+					<td>LMS_05</td>
+					<td>Aspen Univ. Blackboard</td>
+					<td>e12345678asdfqwer</td>
+					<td>aspenuniv</td>
+					<td>9dbf348aa966c5f7f07e8ce2ba5e7a3badc234bc</td>
+					<td>eceb3aedb960374e74f559caeabab3562efe97b4</td>
+					<td>223701</td>
+				</tr>
+			</tbody>
+				</table>
+		
+			<table class="table table-bordered table-hover table-striped table-condensed">
+				<tbody>
+					<h5>LMS Contracts : </h5> (count: t.b.d.)
+					<th>
+						<td>LMS Contract ID</td>
+						<td>LMS/ORG Contract Name</td>
+				<!--	Note: "Start Date" and "End Date" to contracts maintained in HE "Otto", not here. Instead, simple flag (Y/N) if Contract is Currently "On". MANUAL turn off. -->
+						<td>Current (Y/N)</td> 
+						<td>LMS ID</td>
+	<!--	Might prefer "Content Access Profile". t.b.d.	<td>Product Template ID</td> -->
+						<td>Content Access Profile ID</td>
+						<td>Locked (Y/N)</td>
+					<!-- One customer is "Metadata Only", would be 'N' here -->
+						<td>Content (Y/N)</td> 
+					<!-- Criteria NOT included: 
+					- Product Alt-Id
+					- Color (vs. B&W)
+					- File Type (?) (vs. and/or Format?) (t.b.d.)
+					-->
+					</th>
+					<tr>
+						<td><div class="input-group col-lg-1">
+					      <span class="input-group-addon">
+					        <input type="radio">
+					      </span>
+					    </div>
+						</td>
+						<td>LMS_CNTR_01</td>
+						<td>XYZ Univ. FY-2014</td>
+						<td>Y</td>
+						<td>LMS_01</td>
+						<td>CAP_STD_03</td>
+						<td>N</td>
+						<td>Y</td>
+					</tr>
+					<tr>
+						<td><div class="input-group col-lg-1">
+					      <span class="input-group-addon">
+					        <input type="radio">
+					      </span>
+					    </div>
+						</td>
+						<td>LMS_CNTR_02</td>
+						<td>ABC Univ. FY-2013</td>
+						<td>N</td>
+						<td>LMS_02</td>
+						<td>CAP_CUST_02</td>
+						<td>Y</td>
+						<td>Y</td>
+					</tr>
+					<tr>
+						<td><div class="input-group col-lg-1">
+					      <span class="input-group-addon">
+					        <input type="radio">
+					      </span>
+					    </div>
+						</td>
+						<td>LMS_CNTR_03</td>
+						<td>ABC Univ. FY-2014</td>
+						<td>Y</td>
+						<td>LMS_02</td>
+						<td>CAP_CUST_02</td>
+						<td>Y</td>
+						<td>Y</td>
+					</tr>
+					<tr>
+						<td><div class="input-group col-lg-1">
+					      <span class="input-group-addon">
+					        <input type="radio">
+					      </span>
+					    </div>
+						</td>
+						<td>LMS_CNTR_04</td>
+						<td>123ABC Univ. FY-2014</td>
+						<td>Y</td>
+						<td>LMS_03</td>
+						<td>CAP_STD_01</td>
+						<td>N</td>
+						<td>Y</td>
+					</tr>
+					<tr>
+						<td><div class="input-group col-lg-1">
+					      <span class="input-group-addon">
+					        <input type="radio">
+					      </span>
+					    </div>
+						</td>
+						<td>LMS_CNTR_05</td>
+						<td>123ABC Univ. FY-2014</td>
+						<td>Y</td>
+						<td>LMS_04</td>
+						<td>CAP_CUST_05</td>
+						<td>Y</td>
+						<td>Y</td>
+					</tr>
+					<tr>
+						<td><div class="input-group col-lg-1">
+					      <span class="input-group-addon">
+					        <input type="radio">
+					      </span>
+					    </div>
+						</td>
+						<td>LMS_CNTR_06</td>
+						<td>Aspen Univ. FY-2013</td>
+						<td>N</td>
+						<td>LMS_05</td>
+						<td>CAP_CUST_01</td>
+						<td>Y</td>
+						<td>N</td>
+					</tr>
+					<tr>
+						<td><div class="input-group col-lg-1">
+					      <span class="input-group-addon">
+					        <input type="radio">
+					      </span>
+					    </div>
+						</td>
+						<td>LMS_CNTR_07</td>
+						<td>Aspen Univ. FY-2014</td>
+						<td>Y</td>
+						<td>LMS_05</td>
+						<td>CAP_CUST_01</td>
+						<td>Y</td>
+						<td>N</td>
+					</tr>
+				</tbody>
+			</table>
+
+	<!-- WR_ Seems this single table is overmuch 
+			<table class="table table-bordered table-hover table-striped table-condensed">
+				<tbody>
+					<h5>LMS Contracts : </h5> (count: t.b.d.)
+					<th>
+						<td>LMS Contract ID</td>
+						<td>LMS Contract Name</td>
+						<td>Current (Y/N)</td> 
+						<td>LMS LTI GUID</td>
+						<td>LMS LTI Suffix</td>
+						<td>LMS LTI OAuth Key</td>
+						<td>LMS LTI OAuth Secret</td>
+						<td>Organization ID</td>
+						<td>Content Access Profile ID</td>
+						<td>Locked (Y/N)</td>
+						<td>Content (Y/N)</td> 
+					</th>
+					<tr>
+						<td><div class="input-group col-lg-1">
+					      <span class="input-group-addon">
+					        <input type="radio">
+					      </span>
+					    </div>
+						</td>
+						<td>LMS_CNTR_01</td>
+						<td>XYZ Univ. FY-2014</td>
+						<td>Y</td>
+						<td>12345678asdfqwer</td>
+						<td>xyzuniv</td>
+						<td>5dbf348aa966c5f7f07e8ce2ba5e7a3badc234bc</td>
+						<td>fceb3aedb960374e74f559caeabab3562efe97b4</td>
+						<td>223607</td>
+						<td>PTP_STD_PRINT_01</td>
+						<td>N</td>
+						<td>Y</td>
+					</tr>
+				</tbody>
+			</table>
+	-->		
+
+	<div>
+	<button type="submit" class="btn btn-default">Assign One LMS Contract to One LMS ...</button>
+	</form>
+
+<br /><br />
+<div style="font-size: x-small;">Last modified: 2013-07-31</div>
+
+  </body>
+</html>
