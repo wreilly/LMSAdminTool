@@ -852,3 +852,27 @@ administrators-MacBook-Air-2:LMSAdminTool william.reilly$
 http://liw.iki.fi/liw/texts/vi.html
 
 How to get out of vi
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+July 31, 2013
+
+O.K., after review w Andrew G. decision to reduce # of tabs:
+HAVE NOW
+     <li><a href="#">Institutions</a></li>
+        <li><a href="#">LMS Contracts</a></li>
+        <li><a href="./AT-03-ContentAccessProfiles.html">Content Access Profiles</a></li>
+        <li><a href="./AT-04-ProductTemplateParts.html">Product Template Parts</a></li>
+        <li class="active"><a href="#">Product Criteria</a></li>
+
+GOING DOWN TO
+     <li><a href="#">Institutions</a></li>
+        <li><a href="#">LMS Contracts</a></li>
+        <li class="active"><a href="#">Product Criteria</a></li>
+
+BUT, before I do that reduction, and re-factoring (revision) of Product Criteria, I will go through motions of outlining what belongs in LMS Contracts (importantly), and probably less critically what goes in Institutions ("Organizations").
+Cheers.
+
+AT-01-Institutions.html
+AT-02-LMSContracts.html
+
