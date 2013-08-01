@@ -30,7 +30,7 @@
             <li><a href="./AT-01-Institutions.html">Institutions</a></li>
             <li><a href="./AT-02-LMSContracts.html">LMS Contracts</a></li>
             <li class="active"><a href="#">Content Access Profiles</a></li>
-            <li><a href="./AT-04-ProductTemplateParts.html">Product Template Parts</a></li>
+<!--            <li><a href="./AT-04-ProductTemplateParts.html">Product Template Parts</a></li> -->
             <li><a href="./AT-05-ProductCriteria.html">Product Criteria</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -44,11 +44,11 @@
         <p class="lead">Learning Management Systems (LMS) administration tool.</p>
 	</div>
 <hr />
-<ol>
-<li>GRANULAR: &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; Select individual <b style="font-size: large;">Product Criteria</b> to create reusable <b style="font-size: large;">Product Template Parts</b> (assemblies).</li>
-<li>COMBINATION: &nbsp; &nbsp; &nbsp; Combine Template Parts into reusable <b style="font-size: large;">Content Access Profiles</b>.</li>
-<li>USE:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Apply Profiles to individual <b style="font-size: large;">LMS Contracts</b>, for certain <b style="font-size: large;">Institutions</b>.</li>
-</ol>
+
+<ul>
+<li>SELECT: &nbsp; &nbsp;  Select individual <b style="font-size: large;">Product Criteria</b> to create reusable <b style="font-size: large;">Content Access Profiles</b>.</li>
+<li>APPLY:  &nbsp;  &nbsp; &nbsp; Apply Content Access Profiles to individual <b style="font-size: large;">LMS Contracts</b>, for certain <b style="font-size: large;">Institutions</b>.</li>
+</ul>
 
 <hr /> <br />
 
@@ -57,7 +57,7 @@
 	<form method="POST" action="http://cbmp.harvard.edu/lmsadmintool">
 	<div class="container"> <!-- WR_ container -->
 		<h3 align="center">Content Access Profiles</h4> <br />
-		<div align="center">Standard Content Access Profiles (8) | Custom Content Access Profiles (4) </div>
+		<div align="center">Standard Content Access Profiles (8) | Custom Content Access Profiles (3) </div>
 		
 		<table class="table table-bordered table-hover table-striped table-condensed">
 			<tbody>
@@ -65,7 +65,7 @@
 				<th>
 					<td>Content Access Profile ID</td>
 					<td>Content Access Profile Name</td>
-					<td>Description, Parts</td>
+					<td>Description</td>
 				</th>
 				<tr>
 					<td><div class="input-group col-lg-1">
@@ -73,9 +73,9 @@
 				        <input type="radio">
 				      </span>
 				    </div><!-- /input-group --></td>
-					<td>CAP_STD_01</td>
+					<td>CAP_01</td>
 					<td>Standard, Print</td>
-					<td>Standard Content Access Profile (Print). <br />Parts: <li>PTP_STD_PRINT_01</li></td>
+					<td>Standard Content Access Profile (Print).</td>
 				</tr>
 				<tr>
 					<td><div class="input-group col-lg-1">
@@ -83,9 +83,9 @@
 				        <input type="radio">
 				      </span>
 				    </div><!-- /input-group --></td>
-					<td>CAP_STD_02</td>
+					<td>CAP_02</td>
 					<td>Standard, EProduct</td>
-					<td>Standard Content Access Profile (Print). <br />Parts: <li>PTP_STD_EPROD_02</li></td>
+					<td>Standard Content Access Profile (Print).</td>
 				</tr>
 				<tr>
 					<td><div class="input-group col-lg-1">
@@ -93,10 +93,9 @@
 				        <input type="radio">
 				      </span>
 				    </div><!-- /input-group --></td>
-					<td>CAP_STD_03</td>
+					<td>CAP_03</td>
 					<td>Standard, with Samples</td>
-					<td>Standard Content Access Profile (Print), with Samples. <br />Parts: <li>PTP_STD_PRINT_01</li>
-						<li>PTP_AO_01</li></td>
+					<td>Standard Content Access Profile (Print), with Samples.</td>
 				</tr>
 				<tr>
 					<td><div class="input-group col-lg-1">
@@ -104,10 +103,9 @@
 				        <input type="radio">
 				      </span>
 				    </div><!-- /input-group --></td>
-					<td>CAP_STD_04</td>
+					<td>CAP_04</td>
 					<td>Standard, with TNs Clean</td>
-					<td>Standard Content Access Profile (Print), with TNs without watermark. <br />Parts: <li>PTP_STD_PRINT_01</li>
-						<li>PTP_AO_02</li></td>
+					<td>Standard Content Access Profile (Print), with TNs without watermark.</td>
 				</tr>
 				<tr>
 					<td><div class="input-group col-lg-1">
@@ -115,10 +113,9 @@
 				        <input type="radio">
 				      </span>
 				    </div><!-- /input-group --></td>
-					<td>CAP_STD_05</td>
+					<td><a href="./AT-06-ProductCriteriaReport.html">CAP_05</a></td>
 					<td>Standard, with TNs Samples</td>
-					<td>Standard Content Access Profile (Print), with TNs with watermark. <br />Parts: <li>PTP_STD_PRINT_01</li>
-						<li>PTP_AO_03</li></td>
+					<td>Standard Content Access Profile (Print), with TNs with watermark.</td>
 				</tr>
 				<tr>
 					<td><div class="input-group col-lg-1">
@@ -126,10 +123,9 @@
 				        <input type="radio">
 				      </span>
 				    </div><!-- /input-group --></td>
-					<td>CAP_STD_06</td>
+					<td>CAP_06</td>
 					<td>Standard EProduct, with EProduct TNs</td>
-					<td>Standard Content Access Profile (EProduct), with EProduct Faculty Only (TN, ACL 3)<br />Parts: <li>PTP_STD_EPROD_02</li>
-						<li>PTP_AO_04</li></td>
+					<td>Standard Content Access Profile (EProduct), with EProduct Faculty Only (TN, ACL 3)</td>
 				</tr>
 				<tr>
 					<td><div class="input-group col-lg-1">
@@ -137,10 +133,9 @@
 				        <input type="radio">
 				      </span>
 				    </div><!-- /input-group --></td>
-					<td>CAP_STD_07</td>
+					<td>CAP_07</td>
 					<td>Standard, with Japanese</td>
-					<td>Standard Content Access Profile (Print), with Japanese<br />Parts: <li>PTP_STD_PRINT_01</li>
-						<li>PTP_AO_06</li></td>
+					<td>Standard Content Access Profile (Print), with Japanese</td>
 				</tr>
 				<tr>
 					<td><div class="input-group col-lg-1">
@@ -148,11 +143,9 @@
 				        <input type="radio">
 				      </span>
 				    </div><!-- /input-group --></td>
-					<td>CAP_STD_08</td>
+					<td>CAP_08</td>
 					<td>Standard, with TNs (Clean), with Japanese</td>
-					<td>Standard Content Access Profile (Print), with TNs (Clean), with Japanese<br />Parts: <li>PTP_STD_PRINT_01</li>
-						<li>PTP_AO_02</li>
-						<li>PTP_AO_06</li></td>
+					<td>Standard Content Access Profile (Print), with TNs (Clean), with Japanese</td>
 				</tr>
 			</tbody>
 		</table>
@@ -160,7 +153,7 @@
 		
 		<table class="table table-bordered table-hover table-striped table-condensed">
 			<tbody>
-				<h5>Custom Content Access Profiles :</h5> (count: 4)
+				<h5>Custom Content Access Profiles :</h5> (count: 3)
 				<th>
 					<td>Content Access Profile ID</td>
 					<td>Content Access Profile Name</td>
@@ -174,7 +167,7 @@
 				    </div><!-- /input-group --></td>
 					<td>CAP_CUST_01</td>
 					<td>Aspen</td>
-					<td>Custom: Aspen. <br />Parts: <li>PTP_CUST_01</li></td>
+					<td>Custom: Aspen</td>
 				</tr>
 				<tr>
 					<td><div class="input-group col-lg-1">
@@ -184,7 +177,7 @@
 				    </div><!-- /input-group --></td>
 					<td>CAP_CUST_02</td>
 					<td>CNCCU</td>
-					<td>Custom: CNCCU. <br />Parts: <li>PTP_CUST_02</li></td>
+					<td>Custom: CNCCU</td>
 				</tr>
 				<tr>
 					<td><div class="input-group col-lg-1">
@@ -193,28 +186,18 @@
 				      </span>
 				    </div><!-- /input-group --></td>
 					<td>CAP_CUST_03</td>
-					<td>CNCCU</td>
-					<td>Custom: CNCCU. <br />Parts: <li>PTP_CUST_03</li></td>
-				</tr>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="radio">
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td>CAP_CUST_04</td>
-					<td>CNCCU</td>
-					<td>Custom: CNCCU. <br />Parts: <li>PTP_CUST_04</li></td>
+					<td>ECCH</td>
+					<td>Custom: ECCH</td>
 				</tr>
 			</tbody>
 		</table>
 
 	<div>
-	<button type="submit" class="btn btn-default">Select One Content Access Profile ...</button> You will be taken to the LMS Contract page to apply this Profile ...
+	<button type="submit" class="btn btn-default">Select a Content Access Profile</button>
 	</form>
 
 <br /><br />
-<div style="font-size: x-small;">Last modified: 2013-07-30</div>
+<div style="font-size: x-small;">Last modified: 2013-08-01</div>
 
   </body>
 </html>

@@ -30,7 +30,7 @@
             <li><a href="./AT-01-Institutions.html">Institutions</a></li>
             <li class="active"><a href="#">LMS Contracts</a></li>
             <li><a href="./AT-03-ContentAccessProfiles.html">Content Access Profiles</a></li>
-            <li><a href="./AT-04-ProductTemplateParts.html">Product Template Parts</a></li>
+<!--            <li><a href="./AT-04-ProductTemplateParts.html">Product Template Parts</a></li> -->
             <li><a href="./AT-05-ProductCriteria.html">Product Criteria</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -44,11 +44,10 @@
         <p class="lead">Learning Management Systems (LMS) administration tool.</p>
 	</div>
 <hr />
-<ol>
-<li>GRANULAR: &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; Select individual <b style="font-size: large;">Product Criteria</b> to create reusable <b style="font-size: large;">Product Template Parts</b> (assemblies).</li>
-<li>COMBINATION: &nbsp; &nbsp; &nbsp; Combine Template Parts into reusable <b style="font-size: large;">Content Access Profiles</b>.</li>
-<li>USE:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Apply Profiles to individual <b style="font-size: large;">LMS Contracts</b>, for certain <b style="font-size: large;">Institutions</b>.</li>
-</ol>
+<ul>
+<li>SELECT: &nbsp; &nbsp;  Select individual <b style="font-size: large;">Product Criteria</b> to create reusable <b style="font-size: large;">Content Access Profiles</b>.</li>
+<li>APPLY:  &nbsp;  &nbsp; &nbsp; Apply Content Access Profiles to individual <b style="font-size: large;">LMS Contracts</b>, for certain <b style="font-size: large;">Institutions</b>.</li>
+</ul>
 
 <hr /> <br />
 
@@ -57,12 +56,12 @@
 	<form method="POST" action="http://cbmp.harvard.edu/lmsadmintool">
 	<div class="container"> <!-- WR_ container -->
 		<h3 align="center">LMS Contracts</h4> <br />
-		<div align="center">LMSs (t.b.d.) | LMS Contracts (t.b.d.) </div>
+		<div align="center">LMSs (5) | LMS Contracts (7) </div>
 
 
 		<table class="table table-bordered table-hover table-striped table-condensed">
 			<tbody>
-				<h5>LMSs : </h5> (count: t.b.d.)
+				<h5>LMSs : </h5> (count: 5)
 				<th>
 					<td>LMS ID</td>
 					<td>LMS/ORG Name</td>
@@ -153,7 +152,7 @@
 		
 			<table class="table table-bordered table-hover table-striped table-condensed">
 				<tbody>
-					<h5>LMS Contracts : </h5> (count: t.b.d.)
+					<h5>LMS Contracts : </h5> (count: 7)
 					<th>
 						<td>LMS Contract ID</td>
 						<td>LMS/ORG Contract Name</td>
@@ -182,7 +181,7 @@
 						<td>XYZ Univ. FY-2014</td>
 						<td>Y</td>
 						<td>LMS_01</td>
-						<td>CAP_STD_03</td>
+						<td>CAP_03</td>
 						<td>N</td>
 						<td>Y</td>
 					</tr>
@@ -197,7 +196,7 @@
 						<td>ABC Univ. FY-2013</td>
 						<td>N</td>
 						<td>LMS_02</td>
-						<td>CAP_CUST_02</td>
+						<td><a href="./AT-06-ProductCriteriaReport.html">CAP_05</a></td>
 						<td>Y</td>
 						<td>Y</td>
 					</tr>
@@ -212,7 +211,7 @@
 						<td>ABC Univ. FY-2014</td>
 						<td>Y</td>
 						<td>LMS_02</td>
-						<td>CAP_CUST_02</td>
+						<td><a href="./AT-06-ProductCriteriaReport.html">CAP_05</a></td>
 						<td>Y</td>
 						<td>Y</td>
 					</tr>
@@ -242,7 +241,7 @@
 						<td>123ABC Univ. FY-2014</td>
 						<td>Y</td>
 						<td>LMS_04</td>
-						<td>CAP_CUST_05</td>
+						<td>CAP_CUST_02</td>
 						<td>Y</td>
 						<td>Y</td>
 					</tr>
@@ -320,11 +319,11 @@
 	-->		
 
 	<div>
-	<button type="submit" class="btn btn-default">Assign One LMS Contract to One LMS ...</button>
+	<button type="submit" class="btn btn-default">Assign One LMS Contract to One LMS</button>
 	</form>
 
 <br /><br />
-<div style="font-size: x-small;">Last modified: 2013-07-31</div>
+<div style="font-size: x-small;">Last modified: 2013-08-01</div>
 
   </body>
 </html>
