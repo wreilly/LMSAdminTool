@@ -1,5 +1,5 @@
 # Git Pocket Guide, p. 42-44
-# July 30, 2013
+# July 30 - Aug 1, 2013
 # /Users/william.reilly/dev/HBSP/LMSAdminTool/.gitignore
 
 ToolRoot/bower_components/
@@ -13,3 +13,10 @@ ToolRoot/bower_components/
 # Leading character (and closing character as well), is '#'
 # Need to escape that first one, here in .gitignore:
 \#*#
+
+# Now I have
+MiscBack/
+
+# How do I get it to find this in any dir/sub-dir?
+# e.g. ToolRoot/.DS_Store
+.DS_Store
