@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<!-- WR_ 2013-08-05 -->
+	<!-- WR_ 2013-08-06 -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -49,10 +49,6 @@
 
 	<div class="container"> <!-- WR_ container -->
 		<h3 align="center">LMS Contracts</h4> <br />
-		<div align="center"><b>CHOOSE A FUNCTION:</b> 1 ( &nbsp; ) Create/Modify Product Criteria | 2 ( . ) View Product Criteria Summary</div>
-<!--		<div align="center"><b>FUNCTION:</b> ( . ) New Product Criteria | ( ) Modify Product Criteria | ( ) View Product Criteria Summary | ( ) Save As ... Product Criteria  | ( ) Delete Product Criteria</div>  -->
-		
-		<br />
 
 		<!-- Split button  http://getbootstrap.com/components/  (v 3 RC1) -->
 		<div class="btn-group">
@@ -77,15 +73,32 @@
 		<br /><br />
 	</div> <!-- class="container" LMS Contracts -->
 
+<!--	<br />	<br />
+			<div align="center"><b style="font-size: large;">CHOOSE A FUNCTION:</b> 1 ( &nbsp; ) Create/Modify Product Criteria | 2 ( . ) View Product Criteria Summary</div> -->
+	<!--		<div align="center"><b>FUNCTION:</b> ( . ) New Product Criteria | ( ) Modify Product Criteria | ( ) View Product Criteria Summary | ( ) Save As ... Product Criteria  | ( ) Delete Product Criteria</div>  -->
+
+		<br />	
+				<div class="btn-group">
+				  <button type="button" class="btn btn-default">Choose a Function &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </button>
+				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				    <span class="caret"></span>
+				  </button> 
+		<!--			<span style="font-size: large; color: blue;"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Select Product Criteria</b></span> -->
+				  <ul class="dropdown-menu">
+				    <li><a href="#">Select Product Criteria</a></li>
+				    <li class="divider"></li>
+				    <li><a href="./AT-05bb-ProductCriteriaReport.html">View Product Criteria Summary</a></li>
+				  </ul>
+				</div>
+			<br /><br />
+
+			<form method="POST" action="http://cbmp.harvard.edu/lmsadmintool">
+			<div class="container"> <!-- WR_ container -->
+				<h3 align="center">Product Criteria</h4> <br />
+				<div align="center">Product Type Code (36) | Language (5) | Copyright Holder Exclude (3)</div>
 
 
-	<form method="POST" action="http://cbmp.harvard.edu/lmsadmintool">
-	<div class="container"> <!-- WR_ container -->
-		<h3 align="center">Product Criteria <span style="color: blue;">SUMMARY</span></h4> <br />
-		<div align="center">Product Type Code (14) | Language (1) | Copyright Holder Exclude (0)</div>
-		
-		
-		<h5>Product Type Code :</h5> (count: 14) <br /><br />
+				<h5>Product Type Code :</h5> (count: 36) <br /><br />
 
 		
 		<!-- Split button  http://getbootstrap.com/components/  (v 3 RC1) -->
@@ -108,236 +121,568 @@
 		<br /><br />
 -->		
 		
-		<table class="table table-bordered table-hover table-striped table-condensed">
-			<tbody>
-				<th>
-					<td>Criteria Code</td>
-					<td>Criteria Type</td>
-					<td>Value</td>
-					<td>Description</td>
-				</th>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="checkbox" checked>
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td>CRIT_PTC_101
-					</td>
-					<td>PRODUCT_TYPE_CODE</td>
-					<td>101</td>
-					<td>Industry Note and Background Module</td>
-				</tr>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="checkbox" checked>
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td>CRIT_PTC_102
-					</td>
-					<td>PRODUCT_TYPE_CODE</td>
-					<td>102</td>
-					<td>Article</td>
-				</tr>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="checkbox" checked>
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td>CRIT_PTC_104
-					</td>
-					<td>PRODUCT_TYPE_CODE</td>
-					<td>104</td>
-					<td>Case</td>
-				</tr>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="checkbox" checked>
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td>CRIT_PTC_101
-					</td>
-					<td>PRODUCT_TYPE_CODE</td>
-					<td>101</td>
-					<td>Industry Note and Background Module</td>
-				</tr>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="checkbox" checked>
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td>CRIT_PTC_103
-					</td>
-					<td>PRODUCT_TYPE_CODE</td>
-					<td>103</td>
-					<td>Core Curriculum Reading</td>
-				</tr>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="checkbox" checked>
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td>CRIT_PTC_104
-					</td>
-					<td>PRODUCT_TYPE_CODE</td>
-					<td>104</td>
-					<td>Case</td>
-				</tr>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="checkbox" checked>
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td>CRIT_PTC_101
-					</td>
-					<td>PRODUCT_TYPE_CODE</td>
-					<td>101</td>
-					<td>Industry Note and Background Module</td>
-				</tr>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="checkbox" checked>
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td>CRIT_PTC_103
-					</td>
-					<td>PRODUCT_TYPE_CODE</td>
-					<td>103</td>
-					<td>Core Curriculum Reading</td>
-				</tr>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="checkbox" checked>
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td>CRIT_PTC_104
-					</td>
-					<td>PRODUCT_TYPE_CODE</td>
-					<td>104</td>
-					<td>Case</td>
-				</tr>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="checkbox" checked>
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td>CRIT_PTC_101
-					</td>
-					<td>PRODUCT_TYPE_CODE</td>
-					<td>101</td>
-					<td>Industry Note and Background Module</td>
-				</tr>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="checkbox" checked>
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td>CRIT_PTC_103
-					</td>
-					<td>PRODUCT_TYPE_CODE</td>
-					<td>103</td>
-					<td>Core Curriculum Reading</td>
-				</tr>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="checkbox" checked>
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td>CRIT_PTC_104
-					</td>
-					<td>PRODUCT_TYPE_CODE</td>
-					<td>104</td>
-					<td>Case</td>
-				</tr>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="checkbox" checked>
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td>CRIT_PTC_101
-					</td>
-					<td>PRODUCT_TYPE_CODE</td>
-					<td>101</td>
-					<td>Industry Note and Background Module</td>
-				</tr>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="checkbox" checked>
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td>CRIT_PTC_102
-					</td>
-					<td>PRODUCT_TYPE_CODE</td>
-					<td>102</td>
-					<td>Article</td>
-				</tr>
+<table class="table table-bordered table-hover table-striped table-condensed">
+	<tbody>
+		<th>
+			<td>Criteria Code</td>
+			<td>Criteria Type</td>
+			<td>Value</td>
+			<td>Description</td>
+		</th>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_101
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>101</td>
+			<td>Industry Note and Background Module</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_102
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>102</td>
+			<td>Article</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_103
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>103</td>
+			<td>Core Curriculum Reading</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_104
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>104</td>
+			<td>Case</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_101
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>101</td>
+			<td>Industry Note and Background Module</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_102
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>102</td>
+			<td>Article</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_103
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>103</td>
+			<td>Core Curriculum Reading</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_104
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>104</td>
+			<td>Case</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_101
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>101</td>
+			<td>Industry Note and Background Module</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_102
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>102</td>
+			<td>Article</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_103
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>103</td>
+			<td>Core Curriculum Reading</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_104
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>104</td>
+			<td>Case</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_101
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>101</td>
+			<td>Industry Note and Background Module</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_102
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>102</td>
+			<td>Article</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_103
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>103</td>
+			<td>Core Curriculum Reading</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_104
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>104</td>
+			<td>Case</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_101
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>101</td>
+			<td>Industry Note and Background Module</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_102
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>102</td>
+			<td>Article</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_103
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>103</td>
+			<td>Core Curriculum Reading</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_104
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>104</td>
+			<td>Case</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_101
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>101</td>
+			<td>Industry Note and Background Module</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_102
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>102</td>
+			<td>Article</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_103
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>103</td>
+			<td>Core Curriculum Reading</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_104
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>104</td>
+			<td>Case</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_101
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>101</td>
+			<td>Industry Note and Background Module</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_102
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>102</td>
+			<td>Article</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_103
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>103</td>
+			<td>Core Curriculum Reading</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_104
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>104</td>
+			<td>Case</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_101
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>101</td>
+			<td>Industry Note and Background Module</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_102
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>102</td>
+			<td>Article</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_103
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>103</td>
+			<td>Core Curriculum Reading</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_104
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>104</td>
+			<td>Case</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_101
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>101</td>
+			<td>Industry Note and Background Module</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_102
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>102</td>
+			<td>Article</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_103
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>103</td>
+			<td>Core Curriculum Reading</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_PTC_104
+			</td>
+			<td>PRODUCT_TYPE_CODE</td>
+			<td>104</td>
+			<td>Case</td>
+		</tr>
 
-			</tbody>
-		</table>
+	</tbody>
+</table>
 
 
-		<table class="table table-bordered table-hover table-striped table-condensed">
-			<tbody>
-				<h5>Language : </h5> (count: 1)
-				<th>
-					<td>Criteria Code</td>
-					<td>Criteria Type</td>
-					<td>Value</td>
-					<td>Description</td>
-				</th>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="checkbox" checked>
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td>CRIT_LANG_ENG
-					</td>
-					<td>LANGUAGE</td>
-					<td>ENG</td>
-					<td>English</td>
-				</tr>
+<table class="table table-bordered table-hover table-striped table-condensed">
+	<tbody>
+		<h5>Language : </h5> (count: 5)
+		<th>
+			<td>Criteria Code</td>
+			<td>Criteria Type</td>
+			<td>Value</td>
+			<td>Description</td>
+		</th>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_LANG_ENG
+			</td>
+			<td>LANGUAGE</td>
+			<td>ENG</td>
+			<td>English</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_LANG_SPA
+			</td>
+			<td>LANGUAGE</td>
+			<td>SPA</td>
+			<td>Spanish</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_LANG_POR
+			</td>
+			<td>LANGUAGE</td>
+			<td>POR</td>
+			<td>Portuguese</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_LANG_JPN
+			</td>
+			<td>LANGUAGE</td>
+			<td>JPN</td>
+			<td>Japanese</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_LANG_FRE
+			</td>
+			<td>LANGUAGE</td>
+			<td>FRE</td>
+			<td>French</td>
+		</tr>
+	</tbody>
+</table>
 
-			</tbody>
-		</table>
 
-
-		<table class="table table-bordered table-hover table-striped table-condensed">
-			<tbody>
-				<h5>Copyright Holder Exclude : </h5> (count: 0)
-				<th>
-					<td>Criteria Code</td>
-					<td>Criteria Type</td>
-					<td>Value</td>
-					<td>Description</td>
-				</th>
-				<tr>
-					<td><div class="input-group col-lg-1">
-				      <span class="input-group-addon">
-				        <input type="checkbox">
-				      </span>
-				    </div><!-- /input-group --></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-			</tbody>
-		</table>
-
+<table class="table table-bordered table-hover table-striped table-condensed">
+	<tbody>
+		<h5>Copyright Holder Exclude : </h5> (count: 3)
+		<th>
+			<td>Criteria Code</td>
+			<td>Criteria Type</td>
+			<td>Value</td>
+			<td>Description</td>
+		</th>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_COPY_EXCL_IVEY</td>
+			<td>COPYRIGHT_EXCLUDE</td>
+			<td>Ivey</td>
+			<td>Ivey copyright holder NOT permitted</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_COPY_EXCL_DARDEN</td>
+			<td>COPYRIGHT_EXCLUDE</td>
+			<td>Darden</td>
+			<td>Darden copyright holder NOT permitted</td>
+		</tr>
+		<tr>
+			<td><div class="input-group col-lg-1">
+		      <span class="input-group-addon">
+		        <input type="checkbox">
+		      </span>
+		    </div><!-- /input-group --></td>
+			<td>CRIT_COPY_EXCL_MIT</td>
+			<td>COPYRIGHT_EXCLUDE</td>
+			<td>MIT</td>
+			<td>MIT copyright holder NOT permitted</td>
+		</tr>
+	</tbody>
+</table>
 
 
 
@@ -356,7 +701,7 @@
 			   </script>
 
 		<br /><br />
-		<div style="font-size: x-small;">Last modified: 2013-08-05</div>
+		<div style="font-size: x-small;">Last modified: 2013-08-06</div>
 
   </body>
 </html>
