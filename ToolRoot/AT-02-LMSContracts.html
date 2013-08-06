@@ -28,8 +28,8 @@
         <a class="navbar-brand" href="#">HE LMS Admin Tool</a>
         <div class="nav-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="./AT-01-Institutions.html">Institutions</a></li>
-            <li class="active"><a href="#">LMS Contracts</a></li>
+<!--            <li><a href="./AT-01-Institutions.html">Institutions</a></li> -->
+            <li class="active"><a href="#">Institutional LMS Contracts</a></li>
 <!--            <li><a href="./AT-03-ContentAccessProfiles.html">Content Access Profiles</a></li> -->
 <!--            <li><a href="./AT-04-ProductTemplateParts.html">Product Template Parts</a></li> -->
             <li><a href="./AT-05-ProductCriteria.html">Product Criteria</a></li>
@@ -42,16 +42,17 @@
 
       <div class="starter-template">
         <h4>Harvard Business Publishing for Educators : Higher Ed Tech Group</h3>
-        <p class="lead">Learning Management Systems (LMS) administration tool.</p>
+        <p class="lead">Learning Management Systems (LMS) administration tool</p>
 		<hr />
-		<p><u>Select</u> individual <b style="font-size: large;">Product Criteria</b> and <u>apply</u> to individual <b style="font-size: large;">LMS Contracts</b></p>
+		<p><i>Create, modify, or review</i> an <b style="font-size: large;">Institutional LMS Contract</b></p>
+		<p><i>Select</i> individual <b style="font-size: large;">Product Criteria</b> to <i>apply</i> to Contracts</p>
 	</div>
 
 	<!-- Unclear whether a FORM is needed here, radiobuttons or checkboxes.  Prob. not.  See AT-05. -->
 	<form method="POST" action="http://cbmp.harvard.edu/lmsadmintool">
 	<div class="container"> <!-- WR_ container -->
-		<h3 align="center">LMS Contracts</h4> <br />
-		<div align="center">LMS Contracts (7) </div>
+		<h3 align="center">Institutional LMS Contracts</h4> <br />
+		<div align="center">Institutional LMS Contracts (7) </div>
 
 <!-- EBS Organization "Bill-To" number. 
 
@@ -76,8 +77,8 @@
 					</td>
 					<td>LMS_01</td>
 					<td>XYZ Univ. Blackboard v9</td>
-					<td>a12345678asdfqwer</td>
 					<td>xyzuniv</td>
+					<td>60BAF91D1ADE120B5295A0605398041E</td>
 					<td>5dbf348aa966c5f7f07e8ce2ba5e7a3badc234bc</td>
 					<td>fceb3aedb960374e74f559caeabab3562efe97b4</td>
 					<td>223607</td>
@@ -92,21 +93,31 @@
 
 			<table class="table table-bordered table-hover table-striped table-condensed">
 				<tbody>
-					<h5>LMS Contracts : </h5> (count: 7)
+					<h5>Institutional LMS Contracts : </h5> (count: 7)
 					<th>
 						<td><b>LMS Contract ID</b></td>
-						<td><b>LMS/ORG Contract Name</b></td>
+						<td><b>Institution / LMS Name</b></td>
+						<td><b>Current (Y/N)</b></td> 
+						<td><b>Organization EBS ID</b></td>
+						<td><b>Administrator Contact</b></td>
+						<td><b>LMS LTI Suffix</b></td>
+						<td><b>LMS LTI GUID</b></td>
+						<td><b>LMS LTI OAuth Key</b></td>
+						<td><b>LMS LTI OAuth Secret</b></td>
 <!--	Note: "Start Date" and "End Date" to contracts maintained in HE "Otto", not here. Instead, simple flag (Y/N) if Contract is Currently "On". 
 		Important:  MANUAL, not programmatic, turn off. -->
-						<td><b>Current (Y/N)</b></td> 
-						<td><b>LMS ID</b></td>
 					</th>
 					<tr>
 						<td></td>
-						<td><a href="./AT-05aaa-ProductCriteriaReport.html">LMS_CNTR_01</a></td>
-						<td>XYZ Univ. Blackboard v9. FY-2014</td>
+						<td><a href="./AT-05aaa-ProductCriteriaReport.html">LMS_CON_01</a></td>
+						<td>XYZ Univ. Blackboard v9</td>
 						<td>Y</td>
-						<td><a href="./AT-01-Institutions.html">LMS_01</a></td>
+						<td>223607</td>
+						<td>John Smith, jsmith@xyz.edu, 781 781 7817</td>
+						<td>xyzunivbb</td>
+						<td>60BAF91D1ADE120B5295A0605398041E</td>
+						<td>5dbf348aa966c5f7f07e8ce2ba5e7a3badc234bc</td>
+						<td>fceb3aedb960374e74f559caeabab3562efe97b4</td>
 					</tr>
 					<tr>
 						<td></td>
