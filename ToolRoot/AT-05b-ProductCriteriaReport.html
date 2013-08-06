@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<!-- WR_ 2013-08-05 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Higher Ed - Learning Management Systems (LMS) administration tool</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">HE LMS Admin Tool</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./AT-01-Institutions.html">Institutions</a></li>
+            <li><a href="./AT-02-LMSContracts.html">LMS Contracts</a></li>
+<!--            <li><a href="./AT-03-ContentAccessProfiles.html">Content Access Profiles</a></li> -->
+<!--            <li><a href="./AT-04-ProductTemplateParts.html">Product Template Parts</a></li>  -->
+            <li class="active"><a href="./AT-05-ProductCriteria.html">Product Criteria</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h4>Harvard Business Publishing for Educators : Higher Ed Tech Group</h3>
+        <p class="lead">Learning Management Systems (LMS) administration tool.</p>
+<!--			<hr />
+			<p><u>Select</u> individual <b style="font-size: large;">Product Criteria</b> and <u>apply</u> to individual <b style="font-size: large;">LMS Contracts</b></p>
+-->		</div>
+
+	<div class="container"> <!-- WR_ container -->
+		<h3 align="center">LMS Contracts</h4> <br />
+		<div align="center"><b>CHOOSE A FUNCTION:</b> 1 ( &nbsp; ) Create/Modify Product Criteria | 2 ( . ) View Product Criteria Summary</div>
+<!--		<div align="center"><b>FUNCTION:</b> ( . ) New Product Criteria | ( ) Modify Product Criteria | ( ) View Product Criteria Summary | ( ) Save As ... Product Criteria  | ( ) Delete Product Criteria</div>  -->
+		
+		<br />
+
+		<!-- Split button  http://getbootstrap.com/components/  (v 3 RC1) -->
+		<div class="btn-group">
+		  <button type="button" class="btn btn-default">Select an LMS Contract &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </button>
+		  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+		    <span class="caret"></span>
+		  </button> 
+		<span style="font-size: x-large; color: blue;"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Univ. Chicago Blackboard. FY-2014</b></span> 
+		  <ul class="dropdown-menu">
+		    <li><a href="./AT-05a-ProductCriteria.html">XYZ Univ. Blackboard v9. FY-2014</a></li>
+		    <li class="divider"></li>
+		    <li><a href="#">ABC Univ. Desire2Learn. FY-2013</a></li>
+		    <li><a href="#">ABC Univ. Desire2Learn. FY-2014</a></li>
+		    <li class="divider"></li>
+		    <li><a href="./AT-06a-ProductCriteriaReport.html">Univ. Chicago Blackboard. FY-2014</a></li>
+		    <li><a href="#">Univ. Chicago Moodle. FY-2014</a></li>
+		    <li class="divider"></li>
+		    <li><a href="#">Aspen Univ. Blackboard. FY-2013</a></li>
+		    <li><a href="#">Aspen Univ. Blackboard. FY-2014</a></li>
+		  </ul>
+		</div>
+		<br /><br />
+	</div> <!-- class="container" LMS Contracts -->
+
+
+
+	<form method="POST" action="http://cbmp.harvard.edu/lmsadmintool">
+	<div class="container"> <!-- WR_ container -->
+		<h3 align="center">Product Criteria <span style="color: blue;">SUMMARY</span></h4> <br />
+		<div align="center">Product Type Code (14) | Language (1) | Copyright Holder Exclude (0)</div>
+		
+		
+		<h5>Product Type Code :</h5> (count: 14) <br /><br />
+
+		
+		<!-- Split button  http://getbootstrap.com/components/  (v 3 RC1) -->
+<!--		Dropdown not used on SUMMARY page.
+<div class="btn-group">
+		  <button type="button" class="btn btn-default"><i>(Optional)</i> &nbsp; &nbsp; Select Grouping of Product Type Codes &nbsp; &nbsp; &nbsp;</button>
+		  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+		    <span class="caret"></span>
+		  </button>
+		  <ul class="dropdown-menu">
+		    <li><a href="#">Print (Standard)</a></li>
+		    <li><a href="#">EProduct (Standard)</a></li>
+		    <li><a href="#">Teaching Note (Standard)</a></li>
+		    <li class="divider"></li>
+		    <li><a href="#">Print and Teaching Note (Standard)</a></li>
+		    <li><a href="#">Print and EProduct (Standard)</a></li>
+		    <li><a href="#">Print and EProduct and Teaching Note (Standard)</a></li>
+		  </ul>
+		</div>
+		<br /><br />
+-->		
+		
+		<table class="table table-bordered table-hover table-striped table-condensed">
+			<tbody>
+				<th>
+					<td>Criteria Code</td>
+					<td>Criteria Type</td>
+					<td>Value</td>
+					<td>Description</td>
+				</th>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox" checked>
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CRIT_PTC_101
+					</td>
+					<td>PRODUCT_TYPE_CODE</td>
+					<td>101</td>
+					<td>Industry Note and Background Module</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox" checked>
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CRIT_PTC_102
+					</td>
+					<td>PRODUCT_TYPE_CODE</td>
+					<td>102</td>
+					<td>Article</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox" checked>
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CRIT_PTC_104
+					</td>
+					<td>PRODUCT_TYPE_CODE</td>
+					<td>104</td>
+					<td>Case</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox" checked>
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CRIT_PTC_101
+					</td>
+					<td>PRODUCT_TYPE_CODE</td>
+					<td>101</td>
+					<td>Industry Note and Background Module</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox" checked>
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CRIT_PTC_103
+					</td>
+					<td>PRODUCT_TYPE_CODE</td>
+					<td>103</td>
+					<td>Core Curriculum Reading</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox" checked>
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CRIT_PTC_104
+					</td>
+					<td>PRODUCT_TYPE_CODE</td>
+					<td>104</td>
+					<td>Case</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox" checked>
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CRIT_PTC_101
+					</td>
+					<td>PRODUCT_TYPE_CODE</td>
+					<td>101</td>
+					<td>Industry Note and Background Module</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox" checked>
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CRIT_PTC_103
+					</td>
+					<td>PRODUCT_TYPE_CODE</td>
+					<td>103</td>
+					<td>Core Curriculum Reading</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox" checked>
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CRIT_PTC_104
+					</td>
+					<td>PRODUCT_TYPE_CODE</td>
+					<td>104</td>
+					<td>Case</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox" checked>
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CRIT_PTC_101
+					</td>
+					<td>PRODUCT_TYPE_CODE</td>
+					<td>101</td>
+					<td>Industry Note and Background Module</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox" checked>
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CRIT_PTC_103
+					</td>
+					<td>PRODUCT_TYPE_CODE</td>
+					<td>103</td>
+					<td>Core Curriculum Reading</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox" checked>
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CRIT_PTC_104
+					</td>
+					<td>PRODUCT_TYPE_CODE</td>
+					<td>104</td>
+					<td>Case</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox" checked>
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CRIT_PTC_101
+					</td>
+					<td>PRODUCT_TYPE_CODE</td>
+					<td>101</td>
+					<td>Industry Note and Background Module</td>
+				</tr>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox" checked>
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CRIT_PTC_102
+					</td>
+					<td>PRODUCT_TYPE_CODE</td>
+					<td>102</td>
+					<td>Article</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+
+		<table class="table table-bordered table-hover table-striped table-condensed">
+			<tbody>
+				<h5>Language : </h5> (count: 1)
+				<th>
+					<td>Criteria Code</td>
+					<td>Criteria Type</td>
+					<td>Value</td>
+					<td>Description</td>
+				</th>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox" checked>
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td>CRIT_LANG_ENG
+					</td>
+					<td>LANGUAGE</td>
+					<td>ENG</td>
+					<td>English</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+
+		<table class="table table-bordered table-hover table-striped table-condensed">
+			<tbody>
+				<h5>Copyright Holder Exclude : </h5> (count: 0)
+				<th>
+					<td>Criteria Code</td>
+					<td>Criteria Type</td>
+					<td>Value</td>
+					<td>Description</td>
+				</th>
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				    </div><!-- /input-group --></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+
+
+
+
+
+
+			<div>
+<!-- 			<input type="text" size="40" placeholder="Content Access Profile Name"> <br /><br /> 
+			<button type="submit" class="btn btn-default">Apply Selected Product Criteria to LMS Contract</button>  -->
+			</form>
+				<script type="text/javascript" src="./bower_components/bootstrap/assets/js/jquery.js"></script>
+				<script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+			    <script type="text/javascript">
+			        $(document).ready(function () {
+			            $('.dropdown-toggle').dropdown();
+			        });
+			   </script>
+
+		<br /><br />
+		<div style="font-size: x-small;">Last modified: 2013-08-05</div>
+
+  </body>
+</html>
