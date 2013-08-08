@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<!-- WR_ 2013-08-06 -->
+	<!-- WR_ 2013-08-07 -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -52,7 +52,7 @@
 	<form method="POST" action="http://cbmp.harvard.edu/lmsadmintool">
 	<div class="container"> <!-- WR_ container -->
 		<h3 align="center">Institutional LMS Contracts</h4> <br />
-		<div align="center">Institutional LMS Contracts (7) </div>
+		<div align="center">Institutional LMS Contracts (5) </div>
 
 <!-- EBS Organization "Bill-To" number. 
 
@@ -93,27 +93,31 @@
 
 			<table class="table table-bordered table-hover table-striped table-condensed">
 				<tbody>
-					<h5>Institutional LMS Contracts : </h5> (count: 7)
+					<h5>Institutional LMS Contracts : </h5> (count: 5)
 					<th>
 						<td><b>LMS Contract ID</b></td>
-						<td><b>Institution / LMS Name</b></td>
+						<td><b>Institution Name</b></td>
+						<td><b>LMS Name</b></td>
 						<td><b>Current (Y/N)</b></td> 
 						<td><b>Organization EBS ID</b></td>
-						<td><b>Administrator Contact</b></td>
+						<td><b>Administrator Name</b></td>
+						<td><b>Administrator E-mail</b></td>
+						<td><b>Administrator Phone</b></td>
 						<td><b>LMS LTI Suffix</b></td>
 						<td><b>LMS LTI GUID</b></td>
 						<td><b>LMS LTI OAuth Key</b></td>
 						<td><b>LMS LTI OAuth Secret</b></td>
-<!--	Note: "Start Date" and "End Date" to contracts maintained in HE "Otto", not here. Instead, simple flag (Y/N) if Contract is Currently "On". 
-		Important:  MANUAL, not programmatic, turn off. -->
 					</th>
 					<tr>
 						<td></td>
 						<td><a href="./AT-05aaa-ProductCriteriaReport.html">LMS_CON_01</a></td>
-						<td>XYZ Univ. Blackboard v9</td>
+						<td>XYZ Univ.</td>
+						<td>Blackboard v9</td>
 						<td>Y</td>
 						<td>223607</td>
-						<td>John Smith, jsmith@xyz.edu, 781 781 7817</td>
+						<td>John Smith</td>
+						<td>jsmith@xyz.edu</td>
+						<td>781 781 7817</td>
 						<td>xyzunivbb</td>
 						<td>60BAF91D1ADE120B5295A0605398041E</td>
 						<td>5dbf348aa966c5f7f07e8ce2ba5e7a3badc234bc</td>
@@ -121,45 +125,63 @@
 					</tr>
 					<tr>
 						<td></td>
-						<td>LMS_CNTR_02</td>
-						<td>ABC Univ. Desire2Learn. FY-2013</td>
+						<td>LMS_CON_02</td>
+						<td>ABC Univ.</td>
+						<td>Desire2Learn</td>
+						<td>Y</td>
+						<td>223608</td>
+						<td>Jay Smith</td>
+						<td>jsmith@abc.edu</td>
+						<td>123 781 7817</td>
+						<td>abcunivd2l</td>
+						<td>60BAF91D1ADE120B5295A0605398041E</td>
+						<td>5dbf348aa966c5f7f07e8ce2ba5e7a3badc234bc</td>
+						<td>fceb3aedb960374e74f559caeabab3562efe97b4</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><a href="./AT-05bb-ProductCriteriaReport.html">LMS_CON_04</a></td>
+						<td>Univ. Chicago</td>
+						<td>Blackboard</td>
+						<td>Y</td>
+						<td>223699</td>
+						<td>George Donovan</td>
+						<td>gdonovan@chicago.edu</td>
+						<td>456 781 7817</td>
+						<td>chicagobb</td>
+						<td>60BAF91D1ADE120B5295A0605398041E</td>
+						<td>5dbf348aa966c5f7f07e8ce2ba5e7a3badc234bc</td>
+						<td>fceb3aedb960374e74f559caeabab3562efe97b4</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>LMS_CON_05</td>
+						<td>Univ. Chicago</td>
+						<td>Moodle</td>
+						<td>Y</td>
+						<td>223699</td>
+						<td>Alexa Baine</td>
+						<td>abaine@chicago.edu</td>
+						<td>456 999 7817</td>
+						<td>chicagomoo</td>
+						<td>60BAF91D1ADE120B5295A0605398041E</td>
+						<td>5dbf348aa966c5f7f07e8ce2ba5e7a3badc234bc</td>
+						<td>fceb3aedb960374e74f559caeabab3562efe97b4</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>LMS_CON_06</td>
+						<td>Aspen Univ.</td>
+						<td>Blackboard</td>
 						<td>N</td>
-						<td>LMS_02</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>LMS_CNTR_03</td>
-						<td>ABC Univ. Desire2Learn. FY-2014</td>
-						<td>Y</td>
-						<td>LMS_02</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td><a href="./AT-05bb-ProductCriteriaReport.html">LMS_CNTR_04</a></td>
-						<td>Univ. Chicago Blackboard FY-2014</td>
-						<td>Y</td>
-						<td><a href="./AT-01-Institutions.html">LMS_03</a></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>LMS_CNTR_05</td>
-						<td>Univ. Chicago Moodle. FY-2014</td>
-						<td>Y</td>
-						<td>LMS_04</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>LMS_CNTR_06</td>
-						<td>Aspen Univ. Blackboard. FY-2013</td>
-						<td>N</td>
-						<td>LMS_05</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>LMS_CNTR_07</td>
-						<td>Aspen Univ. Blackboard. FY-2014</td>
-						<td>Y</td>
-						<td>LMS_05</td>
+						<td>223715</td>
+						<td>Art Frankel</td>
+						<td>afrankel@aspen.edu</td>
+						<td>987 781 7817</td>
+						<td>aspenbb</td>
+						<td>60BAF91D1ADE120B5295A0605398041E</td>
+						<td>5dbf348aa966c5f7f07e8ce2ba5e7a3badc234bc</td>
+						<td>fceb3aedb960374e74f559caeabab3562efe97b4</td>
 					</tr>
 				</tbody>
 			</table>
@@ -188,7 +210,7 @@
 					      </span>
 					    </div>
 						</td>
-						<td>LMS_CNTR_01</td>
+						<td>LMS_CON_01</td>
 						<td>XYZ Univ. FY-2014</td>
 						<td>Y</td>
 						<td>12345678asdfqwer</td>
@@ -211,7 +233,7 @@
 	</form>
 
 <br /><br />
-<div style="font-size: x-small;">Last modified: 2013-08-06</div>
+<div style="font-size: x-small;">Last modified: 2013-08-07</div>
 
   </body>
 </html>
