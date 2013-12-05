@@ -28,8 +28,8 @@
         <a class="navbar-brand" href="#">HE LMS Admin Tool</a>
         <div class="nav-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="./AT-01-Institutions.html">Institutions</a></li>
-            <li><a href="./AT-02-LMSContracts.html">LMS Contracts</a></li>
+			<!--            <li><a href="./AT-01-Institutions.html">Institutions</a></li> -->
+            <li><a href="./AT-02-LMSContracts.html">Institutional LMS Contracts</a></li>
 <!--            <li><a href="./AT-03-ContentAccessProfiles.html">Content Access Profiles</a></li> -->
 <!--            <li><a href="./AT-04-ProductTemplateParts.html">Product Template Parts</a></li>  -->
             <li class="active"><a href="./AT-05-ProductCriteria.html">Product Criteria</a></li>
@@ -56,24 +56,22 @@
 		  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 		    <span class="caret"></span>
 		  </button> 
-		<span style="font-size: x-large; color: blue;"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; XYZ Univ. Blackboard v9. FY-2014</b></span> 
+		<span style="font-size: x-large; color: blue;"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; XYZ Univ., Blackboard v9</b></span> 
 		  <ul class="dropdown-menu">
-		    <li><a href="./AT-05a-ProductCriteria.html">XYZ Univ. Blackboard v9. FY-2014</a></li>
+		    <li><a href="./AT-05aa-ProductCriteria.html">XYZ Univ., Blackboard v9</a></li>
 		    <li class="divider"></li>
-		    <li><a href="#">ABC Univ. Desire2Learn. FY-2013</a></li>
-		    <li><a href="#">ABC Univ. Desire2Learn. FY-2014</a></li>
+		    <li><a href="#">ABC Univ., Desire2Learn</a></li>
 		    <li class="divider"></li>
-		    <li><a href="./AT-05b-ProductCriteriaReport.html">Univ. Chicago Blackboard. FY-2014</a></li>
-		    <li><a href="#">Univ. Chicago Moodle. FY-2014</a></li>
+		    <li><a href="#">Univ. Chicago, Blackboard</a></li>
+		    <li><a href="#">Univ. Chicago, Moodle</a></li>
 		    <li class="divider"></li>
-		    <li><a href="#">Aspen Univ. Blackboard. FY-2013</a></li>
-		    <li><a href="#">Aspen Univ. Blackboard. FY-2014</a></li>
+		    <li><a href="#">Aspen Univ., Blackboard</a></li>
 		  </ul>
 		</div>
 		<br /><br />
 	</div> <!-- class="container" LMS Contracts -->
 
-		<div class="btn-group">
+	<!--	<div class="btn-group">
 		  <button type="button" class="btn btn-default">Choose a Function &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </button>
 		  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 		    <span class="caret"></span>
@@ -85,12 +83,13 @@
 		    <li><a href="#">View Product Criteria Summary</a></li>
 		  </ul>
 		</div>
+	-->
 	<br /><br />
 
 	<form method="POST" action="http://cbmp.harvard.edu/lmsadmintool">
 	<div class="container"> <!-- WR_ container -->
 		<h3 align="center">Product Criteria <span style="color: blue;">SUMMARY</span></h4> <br />
-		<div align="center">Product Type Code (14 of 36) | Language (1 of 5) | Copyright Holder Exclude (0 of 3)</div>
+		<div align="center">Product Type Code (14 of 36) | Language (1 of 5) | Copyright Holder Exclude (1 of 3)</div>
 		
 		
 		<h5>Product Type Code :</h5> (count: 14 of 36) <br /><br />
@@ -102,7 +101,8 @@
 		  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 		    <span class="caret"></span>
 		  </button>
-			<span style="font-size: large; color: blue;"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Print and Teaching Note (Standard)</b></span>
+<!--			<span style="font-size: large; color: blue;"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Print and Teaching Note (Standard)</b></span> -->
+			<span style="font-size: large; color: blue;"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; * CUSTOM *</b></span>
 		  <ul class="dropdown-menu">
 		    <li><a href="#">Print (Standard)</a></li>
 		    <li><a href="#">EProduct (Standard)</a></li>
@@ -383,23 +383,36 @@
 
 		<table class="table table-bordered table-hover table-striped table-condensed">
 			<tbody>
-				<h5>Copyright Holder Exclude : </h5> (count: 0 of 3)
+				<h5>Copyright Holder Exclude : </h5> (count: 1 of 3)
 				<th>
 					<td>Criteria Code</td>
 					<td>Criteria Type</td>
 					<td>Value</td>
 					<td>Description</td>
 				</th>
+	<!--
 				<tr>
 					<td><div class="input-group col-lg-1">
 				      <span class="input-group-addon">
 				        <input type="checkbox">
 				      </span>
+				    </div></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+-->
+				<tr>
+					<td><div class="input-group col-lg-1">
+				      <span class="input-group-addon">
+				        <input type="checkbox" checked>
+				      </span>
 				    </div><!-- /input-group --></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>CRIT_COPY_EXCL_DARDEN</td>
+					<td>COPYRIGHT_EXCLUDE</td>
+					<td>Darden</td>
+					<td>Darden copyright holder NOT permitted</td>
 				</tr>
 
 			</tbody>

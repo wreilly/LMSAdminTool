@@ -876,3 +876,60 @@ Cheers.
 AT-01-Institutions.html
 AT-02-LMSContracts.html
 
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+Aug 8, 2013
+
+GIT LOG
+
+$ git log --follow ToolRoot/AT-05a-ProductCriteria.html
+$ gitk AT-05a-ProductCriteria.html   (Tk GUI !)
+
+http://stackoverflow.com/questions/278192/view-the-change-history-of-a-file-using-git-versioning
+
+
+Nice!   A change I made but didn't want to keep:
+http://githowto.com/undoing_local_changes
+===================================
+administrators-MacBook-Air-2:ToolRoot william.reilly$ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   ../NOTES-LMSAdminTool.txt
+#	modified:   AT-02-LMSContracts.html
+#	modified:   AT-05-ProductCriteria.html
+#	modified:   AT-05a-ProductCriteria.html
+#	modified:   AT-05aa-ProductCriteria.html
+#	modified:   AT-05aaa-ProductCriteriaReport.html
+#	modified:   AT-05bb-ProductCriteriaReport.html
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	AT-05a-ProductCriteria copy.html
+#	AT-05a-ProductCriteriaReport.html
+no changes added to commit (use "git add" and/or "git commit -a")
+administrators-MacBook-Air-2:ToolRoot william.reilly$ git checkout -- AT-05a-ProductCriteria.html 
+administrators-MacBook-Air-2:ToolRoot william.reilly$ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   ../NOTES-LMSAdminTool.txt
+#	modified:   AT-02-LMSContracts.html
+#	modified:   AT-05-ProductCriteria.html
+#	modified:   AT-05aa-ProductCriteria.html
+#	modified:   AT-05aaa-ProductCriteriaReport.html
+#	modified:   AT-05bb-ProductCriteriaReport.html
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	AT-05a-ProductCriteria copy.html
+#	AT-05a-ProductCriteriaReport.html
+no changes added to commit (use "git add" and/or "git commit -a")
+administrators-MacBook-Air-2:ToolRoot william.reilly$ 
+===================================
+
